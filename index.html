@@ -43,6 +43,9 @@
     .mobile-menu { display: none; }
     .mobile-menu.open { display: flex; }
     .hamburger span { display: block; width: 24px; height: 2px; background: #fff; margin: 5px 0; transition: 0.3s; }
+    .mobile-submenu { display: none; padding-left: 1rem; }
+    .mobile-submenu.open { display: flex; flex-direction: column; }
+    .mobile-toggle-btn { background: none; border: none; color: white; padding: 0 0.5rem; cursor: pointer; font-size: 1.25rem; }
   </style>
 </head>
 
@@ -93,8 +96,36 @@
     </div>
     <nav id="mobile-menu" class="mobile-menu flex-col bg-[#404040] border-t border-white/10 px-6 pb-6 lg:hidden">
       <a href="/" class="py-3 text-white border-b border-white/10">Home</a>
-      <a href="/practice-areas.html" class="py-3 text-white border-b border-white/10">Practice Areas</a>
-      <a href="/about-us.html" class="py-3 text-white border-b border-white/10">About Us</a>
+      <div class="border-b border-white/10">
+        <div class="flex items-center justify-between">
+          <a href="/practice-areas.html" class="py-3 text-white">Practice Areas</a>
+          <button class="mobile-toggle-btn" onclick="this.parentElement.nextElementSibling.classList.toggle('open')" aria-label="Toggle Practice Areas submenu">+</button>
+        </div>
+        <div class="mobile-submenu pb-2">
+          <a href="/practice-areas.html#business-and-commercial" class="py-2 text-white/70 text-sm block">Business and Commercial</a>
+          <a href="/practice-areas.html#oil-gas-energy" class="py-2 text-white/70 text-sm block">Oil and Gas, Mineral Royalties, and Energy Law</a>
+          <a href="/practice-areas.html#real-estate" class="py-2 text-white/70 text-sm block">Real Estate and Land Use</a>
+          <a href="/practice-areas.html#ranching-agriculture" class="py-2 text-white/70 text-sm block">Ranching and Agriculture</a>
+          <a href="/practice-areas.html#estate-planning" class="py-2 text-white/70 text-sm block">Estate Planning</a>
+          <a href="/practice-areas.html#probate" class="py-2 text-white/70 text-sm block">Probate</a>
+          <a href="/practice-areas.html#civil-litigation" class="py-2 text-white/70 text-sm block">Civil Litigation</a>
+        </div>
+      </div>
+      <div class="border-b border-white/10">
+        <div class="flex items-center justify-between">
+          <a href="/about-us.html" class="py-3 text-white">About Us</a>
+          <button class="mobile-toggle-btn" onclick="this.parentElement.nextElementSibling.classList.toggle('open')" aria-label="Toggle About Us submenu">+</button>
+        </div>
+        <div class="mobile-submenu pb-2">
+          <a href="/j-david-horning.html" class="py-2 text-white/70 text-sm block">J. David Horning</a>
+          <a href="/ryan-mcgrath.html" class="py-2 text-white/70 text-sm block">Ryan McGrath</a>
+          <a href="/sarah-weerstra.html" class="py-2 text-white/70 text-sm block">Sarah Weerstra</a>
+          <a href="/richard-horning.html" class="py-2 text-white/70 text-sm block">Richard Horning</a>
+          <a href="/cassie-lewis.html" class="py-2 text-white/70 text-sm block">Cassie Lewis</a>
+          <a href="/savannah-kramer.html" class="py-2 text-white/70 text-sm block">Savannah Kramer</a>
+          <a href="/karena-kase.html" class="py-2 text-white/70 text-sm block">Karena Kase</a>
+        </div>
+      </div>
       <a href="/contact-us.html" class="py-3 text-white">Contact Us</a>
     </nav>
   </header>
@@ -105,7 +136,7 @@
       <div class="bg-dark text-white flex items-center px-10 lg:px-16 py-32 lg:py-44">
         <h1 data-content="hero-title" class="font-heading text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-medium leading-[1.05]">Your Business and Legacy Attorneys</h1>
       </div>
-      <div class="hidden lg:block bg-cover bg-center min-h-[500px]" style="background-image: url('https://devtools.prairiegiraffe.com/api/files/sites/proj_r99yrv9s/1773341263119/assets/mmntloa1wlmzsr.webp');" data-content="hero-image"></div>
+      <div class="bg-cover bg-center min-h-[300px] lg:min-h-[500px]" style="background-image: url('https://devtools.prairiegiraffe.com/api/files/sites/proj_r99yrv9s/1773341263119/assets/mmntloa1wlmzsr.webp');" data-content="hero-image"></div>
     </section>
 
     <!-- About / Intro Section -->
