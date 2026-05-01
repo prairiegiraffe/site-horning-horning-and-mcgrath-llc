@@ -19,10 +19,13 @@
             primary: '#f7f7f7',
             secondary: '#fc5778',
             accent: '#ec400d',
-            dark: '#1d2939',
+            dark: '#424242',
+            'dark-deep': '#333333',
+            'dark-medium': '#616161',
             muted: '#777f88',
             border: '#c7cace',
             'bg-light': '#f7f7f7',
+            'text-dark': '#1d2939',
           },
           fontFamily: {
             heading: ['"Cormorant Garamond"', 'serif'],
@@ -39,79 +42,77 @@
     .nav-dropdown-menu { display: none; }
     .mobile-menu { display: none; }
     .mobile-menu.open { display: flex; }
-    .hamburger span { display: block; width: 24px; height: 2px; background: #fff; margin: 5px 0; transition: 0.3s; }
+    .hamburger span { display: block; width: 24px; height: 2px; background: #424242; margin: 5px 0; transition: 0.3s; }
   </style>
 </head>
 
 <body>
   <!-- Header -->
-  <header data-devtools-partial="header" class="bg-dark text-white">
-    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+  <header data-devtools-partial="header" class="bg-white border-b border-gray-200">
+    <div class="max-w-7xl mx-auto px-6 lg:px-10 py-4 flex items-center justify-between">
       <a href="/" class="shrink-0">
         <img src="https://devtools.prairiegiraffe.com/api/files/sites/proj_r99yrv9s/1773341263119/assets/mmntlnx725372g.svg" alt="Horning, Horning and McGrath, LLC logo" class="h-10" loading="eager" data-content="header-logo">
       </a>
       <nav class="hidden lg:flex items-center gap-1 text-sm font-medium">
-        <a href="/" class="px-3 py-2 text-white hover:text-accent transition-colors">Home</a>
+        <a href="/" class="px-3 py-2 text-text-dark hover:text-accent transition-colors">Home</a>
         <div class="nav-dropdown relative">
-          <a href="/practice-areas.html" class="px-3 py-2 text-white hover:text-accent transition-colors inline-flex items-center gap-1">
+          <a href="/practice-areas.html" class="px-3 py-2 text-text-dark hover:text-accent transition-colors inline-flex items-center gap-1">
             Practice Areas
             <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 9C18 9 13.5811 15 12 15C10.4188 15 6 9 6 9"/></svg>
           </a>
-          <div class="nav-dropdown-menu absolute top-full left-0 bg-dark border border-white/10 rounded-lg py-2 min-w-[280px] z-50 shadow-xl">
-            <a href="/practice-areas.html#business-and-commercial" class="block px-4 py-2 text-sm text-white/80 hover:text-white hover:bg-white/5">Business and Commercial</a>
-            <a href="/practice-areas.html#oil-gas-energy" class="block px-4 py-2 text-sm text-white/80 hover:text-white hover:bg-white/5">Oil and Gas, Mineral Royalties, and Energy Law</a>
-            <a href="/practice-areas.html#real-estate" class="block px-4 py-2 text-sm text-white/80 hover:text-white hover:bg-white/5">Real Estate and Land Use</a>
-            <a href="/practice-areas.html#ranching-agriculture" class="block px-4 py-2 text-sm text-white/80 hover:text-white hover:bg-white/5">Ranching and Agriculture</a>
-            <a href="/practice-areas.html#estate-planning" class="block px-4 py-2 text-sm text-white/80 hover:text-white hover:bg-white/5">Estate Planning</a>
-            <a href="/practice-areas.html#probate" class="block px-4 py-2 text-sm text-white/80 hover:text-white hover:bg-white/5">Probate</a>
-            <a href="/practice-areas.html#civil-litigation" class="block px-4 py-2 text-sm text-white/80 hover:text-white hover:bg-white/5">Civil Litigation</a>
+          <div class="nav-dropdown-menu absolute top-full left-0 bg-white border border-gray-200 rounded-lg py-2 min-w-[280px] z-50 shadow-xl">
+            <a href="/practice-areas.html#business-and-commercial" class="block px-4 py-2 text-sm text-gray-600 hover:text-text-dark hover:bg-gray-50">Business and Commercial</a>
+            <a href="/practice-areas.html#oil-gas-energy" class="block px-4 py-2 text-sm text-gray-600 hover:text-text-dark hover:bg-gray-50">Oil and Gas, Mineral Royalties, and Energy Law</a>
+            <a href="/practice-areas.html#real-estate" class="block px-4 py-2 text-sm text-gray-600 hover:text-text-dark hover:bg-gray-50">Real Estate and Land Use</a>
+            <a href="/practice-areas.html#ranching-agriculture" class="block px-4 py-2 text-sm text-gray-600 hover:text-text-dark hover:bg-gray-50">Ranching and Agriculture</a>
+            <a href="/practice-areas.html#estate-planning" class="block px-4 py-2 text-sm text-gray-600 hover:text-text-dark hover:bg-gray-50">Estate Planning</a>
+            <a href="/practice-areas.html#probate" class="block px-4 py-2 text-sm text-gray-600 hover:text-text-dark hover:bg-gray-50">Probate</a>
+            <a href="/practice-areas.html#civil-litigation" class="block px-4 py-2 text-sm text-gray-600 hover:text-text-dark hover:bg-gray-50">Civil Litigation</a>
           </div>
         </div>
         <div class="nav-dropdown relative">
-          <a href="/about-us.html" class="px-3 py-2 text-white hover:text-accent transition-colors inline-flex items-center gap-1">
+          <a href="/about-us.html" class="px-3 py-2 text-text-dark hover:text-accent transition-colors inline-flex items-center gap-1">
             About Us
             <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 9C18 9 13.5811 15 12 15C10.4188 15 6 9 6 9"/></svg>
           </a>
-          <div class="nav-dropdown-menu absolute top-full left-0 bg-dark border border-white/10 rounded-lg py-2 min-w-[200px] z-50 shadow-xl">
-            <a href="/j-david-horning.html" class="block px-4 py-2 text-sm text-white/80 hover:text-white hover:bg-white/5">J. David Horning</a>
-            <a href="/ryan-mcgrath.html" class="block px-4 py-2 text-sm text-white/80 hover:text-white hover:bg-white/5">Ryan McGrath</a>
-            <a href="/sarah-weerstra.html" class="block px-4 py-2 text-sm text-white/80 hover:text-white hover:bg-white/5">Sarah Weerstra</a>
-            <a href="/richard-horning.html" class="block px-4 py-2 text-sm text-white/80 hover:text-white hover:bg-white/5">Richard Horning</a>
-            <a href="/cassie-lewis.html" class="block px-4 py-2 text-sm text-white/80 hover:text-white hover:bg-white/5">Cassie Lewis</a>
-            <a href="/savannah-kramer.html" class="block px-4 py-2 text-sm text-white/80 hover:text-white hover:bg-white/5">Savannah Kramer</a>
-            <a href="/karena-kase.html" class="block px-4 py-2 text-sm text-white/80 hover:text-white hover:bg-white/5">Karena Kase</a>
+          <div class="nav-dropdown-menu absolute top-full left-0 bg-white border border-gray-200 rounded-lg py-2 min-w-[200px] z-50 shadow-xl">
+            <a href="/j-david-horning.html" class="block px-4 py-2 text-sm text-gray-600 hover:text-text-dark hover:bg-gray-50">J. David Horning</a>
+            <a href="/ryan-mcgrath.html" class="block px-4 py-2 text-sm text-gray-600 hover:text-text-dark hover:bg-gray-50">Ryan McGrath</a>
+            <a href="/sarah-weerstra.html" class="block px-4 py-2 text-sm text-gray-600 hover:text-text-dark hover:bg-gray-50">Sarah Weerstra</a>
+            <a href="/richard-horning.html" class="block px-4 py-2 text-sm text-gray-600 hover:text-text-dark hover:bg-gray-50">Richard Horning</a>
+            <a href="/cassie-lewis.html" class="block px-4 py-2 text-sm text-gray-600 hover:text-text-dark hover:bg-gray-50">Cassie Lewis</a>
+            <a href="/savannah-kramer.html" class="block px-4 py-2 text-sm text-gray-600 hover:text-text-dark hover:bg-gray-50">Savannah Kramer</a>
+            <a href="/karena-kase.html" class="block px-4 py-2 text-sm text-gray-600 hover:text-text-dark hover:bg-gray-50">Karena Kase</a>
           </div>
         </div>
-        <a href="/contact-us.html" class="px-3 py-2 text-white hover:text-accent transition-colors">Contact Us</a>
+        <a href="/contact-us.html" class="px-3 py-2 text-text-dark hover:text-accent transition-colors">Contact Us</a>
       </nav>
       <button class="lg:hidden hamburger" aria-label="Open mobile menu" aria-expanded="false" onclick="document.getElementById('mobile-menu').classList.toggle('open'); this.setAttribute('aria-expanded', this.getAttribute('aria-expanded') === 'false' ? 'true' : 'false');">
         <span></span><span></span><span></span>
       </button>
     </div>
-    <nav id="mobile-menu" class="mobile-menu flex-col bg-dark border-t border-white/10 px-6 pb-6 lg:hidden">
-      <a href="/" class="py-3 text-white border-b border-white/10">Home</a>
-      <a href="/practice-areas.html" class="py-3 text-white border-b border-white/10">Practice Areas</a>
-      <a href="/about-us.html" class="py-3 text-white border-b border-white/10">About Us</a>
-      <a href="/contact-us.html" class="py-3 text-white">Contact Us</a>
+    <nav id="mobile-menu" class="mobile-menu flex-col bg-white border-t border-gray-200 px-6 pb-6 lg:hidden">
+      <a href="/" class="py-3 text-text-dark border-b border-gray-100">Home</a>
+      <a href="/practice-areas.html" class="py-3 text-text-dark border-b border-gray-100">Practice Areas</a>
+      <a href="/about-us.html" class="py-3 text-text-dark border-b border-gray-100">About Us</a>
+      <a href="/contact-us.html" class="py-3 text-text-dark">Contact Us</a>
     </nav>
   </header>
 
   <main>
-    <!-- Hero Section -->
-    <section data-block-id="index:hero" class="bg-dark text-white py-24 md:py-36 lg:py-44">
-      <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-12 items-stretch">
-        <div class="flex items-center">
-          <h1 data-content="hero-title" class="font-heading text-5xl md:text-6xl lg:text-7xl font-medium leading-tight">Your Business and Legacy Attorneys</h1>
-        </div>
-        <div></div>
+    <!-- Hero Section: split layout with dark text left, photo right -->
+    <section data-block-id="index:hero" class="grid lg:grid-cols-2">
+      <div class="bg-dark text-white flex items-center px-10 lg:px-16 py-32 lg:py-44">
+        <h1 data-content="hero-title" class="font-heading text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-medium leading-[1.05]">Your Business and Legacy Attorneys</h1>
       </div>
+      <div class="hidden lg:block bg-cover bg-center min-h-[500px]" style="background-image: url('https://devtools.prairiegiraffe.com/api/files/sites/proj_r99yrv9s/1773341263119/assets/mmntloa1wlmzsr.webp');" data-content="hero-image"></div>
     </section>
 
     <!-- About / Intro Section -->
     <section data-block-id="index:intro" class="py-20 md:py-28">
-      <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-16">
-        <div>
-          <div class="border-l-4 border-accent pl-8 space-y-5 text-base md:text-lg leading-relaxed text-dark" data-content="intro-text">
+      <div class="max-w-7xl mx-auto px-6 lg:px-10">
+        <div class="max-w-4xl">
+          <div class="border-l border-dark pl-8 space-y-5 text-base md:text-lg leading-relaxed text-text-dark font-light" data-content="intro-text">
             <p>HHM is committed to helping you prepare for life's best and worst moments. From business planning and growth to estate planning and navigating through probate, we offer knowledge and experience you can rely on as your partner in both business and life.</p>
             <p>Communication and honesty are key to a successful attorney-client relationship and we at HHM pride ourselves on both. From our first meeting and onward you can expect timely, straightforward, and direct communication and advice from our attorneys. Here at HHM, we value finding what works for you and will tailor our communication style to make sure that you always feel heard.</p>
             <p>As your business partner, we guide and navigate the changes and growth of your business from inception, the hiring process, and maintaining business records, through mergers, acquisitions, expansion, and sale. Litigation can be an unfortunate part of business, but our attorneys are ready to represent you and your business in all matters of commercial and business litigation.</p>
@@ -122,97 +123,75 @@
           </div>
           <a href="/contact-us.html" class="mt-8 inline-block bg-accent text-white px-8 py-3 rounded-full font-medium hover:bg-accent/90 transition-colors">Contact Us</a>
         </div>
-        <div></div>
       </div>
     </section>
 
     <!-- Practice Areas Section -->
     <section data-block-id="index:practice-areas" class="bg-dark text-white py-20 md:py-28">
-      <div class="max-w-7xl mx-auto px-6">
-        <h2 data-content="practice-areas-title" class="font-heading text-4xl md:text-5xl lg:text-6xl font-medium mb-6">Practice Areas</h2>
+      <div class="max-w-7xl mx-auto px-6 lg:px-10">
+        <h2 data-content="practice-areas-title" class="font-heading text-5xl md:text-6xl lg:text-7xl font-medium mb-6">Practice Areas</h2>
         <hr class="border-white/20 mb-12">
 
-        <!-- Business and Commercial -->
-        <div class="grid md:grid-cols-2 gap-8 md:gap-16 py-8">
-          <div>
+        <div class="grid md:grid-cols-2 gap-8 md:gap-16 py-8 mb-16">
+          <div class="flex flex-col justify-between">
             <h2 class="font-heading text-2xl md:text-3xl font-medium mb-4">Business and Commercial</h2>
-            <a href="/practice-areas.html#business-and-commercial" class="inline-block border border-white text-white px-6 py-2 rounded-full text-sm font-medium hover:bg-white hover:text-dark transition-colors">Learn More</a>
+            <a href="/practice-areas.html#business-and-commercial" class="inline-block border border-white text-white px-6 py-2 rounded-full text-sm font-medium hover:bg-white hover:text-dark transition-colors w-fit">Learn More</a>
           </div>
-          <div>
-            <p class="text-white/80 leading-relaxed">HHM serves as your dedicated business partner, providing legal guidance to ensure your success and safeguard your business through changing laws and evolving needs. From contracts and employment issues to mergers and real estate, our efficient, practical counsel helps protect your profitability while offering the flexibility of outside general counsel at a fraction of the cost.</p>
-          </div>
+          <p class="text-white/80 leading-relaxed">HHM serves as your dedicated business partner, providing legal guidance to ensure your success and safeguard your business through changing laws and evolving needs. From contracts and employment issues to mergers and real estate, our efficient, practical counsel helps protect your profitability while offering the flexibility of outside general counsel at a fraction of the cost.</p>
         </div>
         <hr class="border-white/20">
 
-        <!-- Oil and Gas -->
-        <div class="grid md:grid-cols-2 gap-8 md:gap-16 py-8">
-          <div>
+        <div class="grid md:grid-cols-2 gap-8 md:gap-16 py-8 mb-16">
+          <div class="flex flex-col justify-between">
             <h2 class="font-heading text-2xl md:text-3xl font-medium mb-4">Oil and Gas, Mineral Royalties, and Energy Law</h2>
-            <a href="/practice-areas.html#oil-gas-energy" class="inline-block border border-white text-white px-6 py-2 rounded-full text-sm font-medium hover:bg-white hover:text-dark transition-colors">Learn More</a>
+            <a href="/practice-areas.html#oil-gas-energy" class="inline-block border border-white text-white px-6 py-2 rounded-full text-sm font-medium hover:bg-white hover:text-dark transition-colors w-fit">Learn More</a>
           </div>
-          <div>
-            <p class="text-white/80 leading-relaxed">HHM's experienced attorneys help you maximize the value of your oil, gas, and mineral assets while protecting your legacy. We guide you through negotiations, contracts, and rights management, ensuring fair returns and preserving your interests for generations to come.</p>
-          </div>
+          <p class="text-white/80 leading-relaxed">HHM's experienced attorneys help you maximize the value of your oil, gas, and mineral assets while protecting your legacy. We guide you through negotiations, contracts, and rights management, ensuring fair returns and preserving your interests for generations to come.</p>
         </div>
         <hr class="border-white/20">
 
-        <!-- Real Estate -->
-        <div class="grid md:grid-cols-2 gap-8 md:gap-16 py-8">
-          <div>
+        <div class="grid md:grid-cols-2 gap-8 md:gap-16 py-8 mb-16">
+          <div class="flex flex-col justify-between">
             <h2 class="font-heading text-2xl md:text-3xl font-medium mb-4">Real Estate and Land Use</h2>
-            <a href="/practice-areas.html#real-estate" class="inline-block border border-white text-white px-6 py-2 rounded-full text-sm font-medium hover:bg-white hover:text-dark transition-colors">Learn More</a>
+            <a href="/practice-areas.html#real-estate" class="inline-block border border-white text-white px-6 py-2 rounded-full text-sm font-medium hover:bg-white hover:text-dark transition-colors w-fit">Learn More</a>
           </div>
-          <div>
-            <p class="text-white/80 leading-relaxed">Whether navigating a straightforward sale or a complex transaction, HHM ensures your real estate investments are structured, protected, and aligned with your goals. From negotiation to closing, our attorneys handle the details so you can focus on the long-term value of your property.</p>
-          </div>
+          <p class="text-white/80 leading-relaxed">Whether navigating a straightforward sale or a complex transaction, HHM ensures your real estate investments are structured, protected, and aligned with your goals. From negotiation to closing, our attorneys handle the details so you can focus on the long-term value of your property.</p>
         </div>
         <hr class="border-white/20">
 
-        <!-- Ranching and Agriculture -->
-        <div class="grid md:grid-cols-2 gap-8 md:gap-16 py-8">
-          <div>
+        <div class="grid md:grid-cols-2 gap-8 md:gap-16 py-8 mb-16">
+          <div class="flex flex-col justify-between">
             <h2 class="font-heading text-2xl md:text-3xl font-medium mb-4">Ranching and Agriculture</h2>
-            <a href="/practice-areas.html#ranching-agriculture" class="inline-block border border-white text-white px-6 py-2 rounded-full text-sm font-medium hover:bg-white hover:text-dark transition-colors">Learn More</a>
+            <a href="/practice-areas.html#ranching-agriculture" class="inline-block border border-white text-white px-6 py-2 rounded-full text-sm font-medium hover:bg-white hover:text-dark transition-colors w-fit">Learn More</a>
           </div>
-          <div>
-            <p class="text-white/80 leading-relaxed">HHM understands the unique challenges of Wyoming's ranching and agricultural communities. We provide tailored legal solutions to support your operations and help preserve your hard work as a legacy for future generations.</p>
-          </div>
+          <p class="text-white/80 leading-relaxed">HHM understands the unique challenges of Wyoming's ranching and agricultural communities. We provide tailored legal solutions to support your operations and help preserve your hard work as a legacy for future generations.</p>
         </div>
         <hr class="border-white/20">
 
-        <!-- Estate Planning -->
-        <div class="grid md:grid-cols-2 gap-8 md:gap-16 py-8">
-          <div>
+        <div class="grid md:grid-cols-2 gap-8 md:gap-16 py-8 mb-16">
+          <div class="flex flex-col justify-between">
             <h2 class="font-heading text-2xl md:text-3xl font-medium mb-4">Estate Planning</h2>
-            <a href="/practice-areas.html#estate-planning" class="inline-block border border-white text-white px-6 py-2 rounded-full text-sm font-medium hover:bg-white hover:text-dark transition-colors">Learn More</a>
+            <a href="/practice-areas.html#estate-planning" class="inline-block border border-white text-white px-6 py-2 rounded-full text-sm font-medium hover:bg-white hover:text-dark transition-colors w-fit">Learn More</a>
           </div>
-          <div>
-            <p class="text-white/80 leading-relaxed">At HHM, estate planning is not one-size-fits-all. We work closely with you to design a personalized plan that reflects your priorities, protects your assets, and simplifies the process for your loved ones, offering flat fees for clarity and peace of mind.</p>
-          </div>
+          <p class="text-white/80 leading-relaxed">At HHM, estate planning is not one-size-fits-all. We work closely with you to design a personalized plan that reflects your priorities, protects your assets, and simplifies the process for your loved ones, offering flat fees for clarity and peace of mind.</p>
         </div>
         <hr class="border-white/20">
 
-        <!-- Probate -->
-        <div class="grid md:grid-cols-2 gap-8 md:gap-16 py-8">
-          <div>
+        <div class="grid md:grid-cols-2 gap-8 md:gap-16 py-8 mb-16">
+          <div class="flex flex-col justify-between">
             <h2 class="font-heading text-2xl md:text-3xl font-medium mb-4">Probate</h2>
-            <a href="/practice-areas.html#probate" class="inline-block border border-white text-white px-6 py-2 rounded-full text-sm font-medium hover:bg-white hover:text-dark transition-colors">Learn More</a>
+            <a href="/practice-areas.html#probate" class="inline-block border border-white text-white px-6 py-2 rounded-full text-sm font-medium hover:bg-white hover:text-dark transition-colors w-fit">Learn More</a>
           </div>
-          <div>
-            <p class="text-white/80 leading-relaxed">HHM offers compassionate and knowledgeable guidance through the complexities of Wyoming probate law. Our attorneys ensure a smooth process tailored to your estate's unique needs, allowing you to focus on healing while we handle the legal steps.</p>
-          </div>
+          <p class="text-white/80 leading-relaxed">HHM offers compassionate and knowledgeable guidance through the complexities of Wyoming probate law. Our attorneys ensure a smooth process tailored to your estate's unique needs, allowing you to focus on healing while we handle the legal steps.</p>
         </div>
         <hr class="border-white/20">
 
-        <!-- Civil Litigation -->
         <div class="grid md:grid-cols-2 gap-8 md:gap-16 py-8">
-          <div>
+          <div class="flex flex-col justify-between">
             <h2 class="font-heading text-2xl md:text-3xl font-medium mb-4">Civil Litigation</h2>
-            <a href="/practice-areas.html#civil-litigation" class="inline-block border border-white text-white px-6 py-2 rounded-full text-sm font-medium hover:bg-white hover:text-dark transition-colors">Learn More</a>
+            <a href="/practice-areas.html#civil-litigation" class="inline-block border border-white text-white px-6 py-2 rounded-full text-sm font-medium hover:bg-white hover:text-dark transition-colors w-fit">Learn More</a>
           </div>
-          <div>
-            <p class="text-white/80 leading-relaxed">When disputes arise, HHM's experienced litigation team is ready to advocate for your interests. From probate and property disputes to business conflicts, we navigate the complexities of civil litigation with the expertise and dedication you can trust.</p>
-          </div>
+          <p class="text-white/80 leading-relaxed">When disputes arise, HHM's experienced litigation team is ready to advocate for your interests. From probate and property disputes to business conflicts, we navigate the complexities of civil litigation with the expertise and dedication you can trust.</p>
         </div>
         <hr class="border-white/20">
       </div>
@@ -229,40 +208,35 @@
   </main>
 
   <!-- Footer -->
-  <footer data-devtools-partial="footer" class="bg-dark text-white">
-    <div class="max-w-7xl mx-auto px-6 py-16">
-      <div class="flex flex-col md:flex-row justify-between items-start gap-12">
-        <div>
-          <a href="/">
-            <img src="https://devtools.prairiegiraffe.com/api/files/sites/proj_r99yrv9s/1773341263119/assets/mmntlnx552l1u7.webp" alt="Horning, Horning and McGrath, LLC" class="h-10 mb-6" loading="lazy">
-          </a>
-        </div>
-        <div class="grid sm:grid-cols-2 gap-12">
-          <div class="text-white/80 text-sm space-y-1">
-            <p>400 S. Douglas Hwy.</p>
-            <p>Gillette, WY 82716</p>
-            <div class="mt-4 space-y-1">
-              <p>Phone: <a href="tel:3076863736" class="hover:text-white">307-686-3736</a></p>
-              <p>Fax: 307-696-6013</p>
-            </div>
-          </div>
+  <footer data-devtools-partial="footer">
+    <div class="bg-dark-medium text-white">
+      <div class="max-w-7xl mx-auto px-6 lg:px-10 py-12">
+        <div class="flex flex-col gap-8">
           <div>
+            <a href="/" class="inline-block bg-white p-4 rounded">
+              <img src="https://devtools.prairiegiraffe.com/api/files/sites/proj_r99yrv9s/1773341263119/assets/mmntlnx552l1u7.webp" alt="Horning, Horning and McGrath, LLC" class="h-8" loading="lazy">
+            </a>
+          </div>
+          <div class="flex flex-col md:flex-row justify-between items-start gap-8">
+            <div class="flex flex-col sm:flex-row gap-8 sm:gap-16 text-white/80 text-sm">
+              <div class="space-y-1">
+                <p>400 S. Douglas Hwy.</p>
+                <p>Gillette, WY 82716</p>
+              </div>
+              <div class="space-y-1">
+                <p>Phone: <a href="tel:3076863736" class="hover:text-white">307-686-3736</a></p>
+                <p>Fax: 307-696-6013</p>
+              </div>
+            </div>
             <a href="/contact-us.html" class="inline-block border border-white text-white px-6 py-2 rounded-full text-sm font-medium hover:bg-white hover:text-dark transition-colors">Contact Us</a>
           </div>
         </div>
       </div>
     </div>
-    <div class="border-t border-white/10">
-      <div class="max-w-7xl mx-auto px-6 py-6">
-        <div class="flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-white/60">
-          <p>Copyright 2026 &copy; Horning, Horning and McGrath, LLC</p>
-          <nav class="flex gap-6" aria-label="Legal">
-            <a href="#" class="hover:text-white">Privacy Policy</a>
-            <a href="#" class="hover:text-white">Disclaimer</a>
-            <a href="#" class="hover:text-white">Terms of Use</a>
-          </nav>
-        </div>
-        <p class="text-xs text-white/40 mt-4">DISCLAIMER: The Wyoming State Bar does not certify any lawyer as a specialist or expert. Anyone considering a lawyer should independently investigate the lawyer's credentials and ability, and not rely upon advertisements or self-proclaimed expertise.</p>
+    <div class="bg-dark text-white">
+      <div class="max-w-7xl mx-auto px-6 lg:px-10 py-6">
+        <p class="text-sm text-white/60 mb-4">Copyright 2026 &copy; Horning, Horning and McGrath, LLC</p>
+        <p class="text-xs text-white/40">DISCLAIMER: The Wyoming State Bar does not certify any lawyer as a specialist or expert. Anyone considering a lawyer should independently investigate the lawyer's credentials and ability, and not rely upon advertisements or self-proclaimed expertise.</p>
       </div>
     </div>
   </footer>

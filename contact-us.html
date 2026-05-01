@@ -19,10 +19,13 @@
             primary: '#f7f7f7',
             secondary: '#fc5778',
             accent: '#ec400d',
-            dark: '#1d2939',
+            dark: '#424242',
+            'dark-deep': '#333333',
+            'dark-medium': '#616161',
             muted: '#777f88',
             border: '#c7cace',
             'bg-light': '#f7f7f7',
+            'text-dark': '#1d2939',
           },
           fontFamily: {
             heading: ['"Cormorant Garamond"', 'serif'],
@@ -39,92 +42,92 @@
     .nav-dropdown-menu { display: none; }
     .mobile-menu { display: none; }
     .mobile-menu.open { display: flex; }
-    .hamburger span { display: block; width: 24px; height: 2px; background: #fff; margin: 5px 0; transition: 0.3s; }
+    .hamburger span { display: block; width: 24px; height: 2px; background: #424242; margin: 5px 0; transition: 0.3s; }
   </style>
 </head>
 
 <body>
   <!-- Header -->
-  <header data-devtools-partial="header" class="bg-dark text-white">
-    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+  <header data-devtools-partial="header" class="bg-white border-b border-gray-200">
+    <div class="max-w-7xl mx-auto px-6 lg:px-10 py-4 flex items-center justify-between">
       <a href="/" class="shrink-0">
         <img src="https://devtools.prairiegiraffe.com/api/files/sites/proj_r99yrv9s/1773341263119/assets/mmntlnx725372g.svg" alt="Horning, Horning and McGrath, LLC logo" class="h-10" loading="eager" data-content="header-logo">
       </a>
       <nav class="hidden lg:flex items-center gap-1 text-sm font-medium">
-        <a href="/" class="px-3 py-2 text-white hover:text-accent transition-colors">Home</a>
+        <a href="/" class="px-3 py-2 text-text-dark hover:text-accent transition-colors">Home</a>
         <div class="nav-dropdown relative">
-          <a href="/practice-areas.html" class="px-3 py-2 text-white hover:text-accent transition-colors inline-flex items-center gap-1">
+          <a href="/practice-areas.html" class="px-3 py-2 text-text-dark hover:text-accent transition-colors inline-flex items-center gap-1">
             Practice Areas
             <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 9C18 9 13.5811 15 12 15C10.4188 15 6 9 6 9"/></svg>
           </a>
-          <div class="nav-dropdown-menu absolute top-full left-0 bg-dark border border-white/10 rounded-lg py-2 min-w-[280px] z-50 shadow-xl">
-            <a href="/practice-areas.html#business-and-commercial" class="block px-4 py-2 text-sm text-white/80 hover:text-white hover:bg-white/5">Business and Commercial</a>
-            <a href="/practice-areas.html#oil-gas-energy" class="block px-4 py-2 text-sm text-white/80 hover:text-white hover:bg-white/5">Oil and Gas, Mineral Royalties, and Energy Law</a>
-            <a href="/practice-areas.html#real-estate" class="block px-4 py-2 text-sm text-white/80 hover:text-white hover:bg-white/5">Real Estate and Land Use</a>
-            <a href="/practice-areas.html#ranching-agriculture" class="block px-4 py-2 text-sm text-white/80 hover:text-white hover:bg-white/5">Ranching and Agriculture</a>
-            <a href="/practice-areas.html#estate-planning" class="block px-4 py-2 text-sm text-white/80 hover:text-white hover:bg-white/5">Estate Planning</a>
-            <a href="/practice-areas.html#probate" class="block px-4 py-2 text-sm text-white/80 hover:text-white hover:bg-white/5">Probate</a>
-            <a href="/practice-areas.html#civil-litigation" class="block px-4 py-2 text-sm text-white/80 hover:text-white hover:bg-white/5">Civil Litigation</a>
+          <div class="nav-dropdown-menu absolute top-full left-0 bg-white border border-gray-200 rounded-lg py-2 min-w-[280px] z-50 shadow-xl">
+            <a href="/practice-areas.html#business-and-commercial" class="block px-4 py-2 text-sm text-gray-600 hover:text-text-dark hover:bg-gray-50">Business and Commercial</a>
+            <a href="/practice-areas.html#oil-gas-energy" class="block px-4 py-2 text-sm text-gray-600 hover:text-text-dark hover:bg-gray-50">Oil and Gas, Mineral Royalties, and Energy Law</a>
+            <a href="/practice-areas.html#real-estate" class="block px-4 py-2 text-sm text-gray-600 hover:text-text-dark hover:bg-gray-50">Real Estate and Land Use</a>
+            <a href="/practice-areas.html#ranching-agriculture" class="block px-4 py-2 text-sm text-gray-600 hover:text-text-dark hover:bg-gray-50">Ranching and Agriculture</a>
+            <a href="/practice-areas.html#estate-planning" class="block px-4 py-2 text-sm text-gray-600 hover:text-text-dark hover:bg-gray-50">Estate Planning</a>
+            <a href="/practice-areas.html#probate" class="block px-4 py-2 text-sm text-gray-600 hover:text-text-dark hover:bg-gray-50">Probate</a>
+            <a href="/practice-areas.html#civil-litigation" class="block px-4 py-2 text-sm text-gray-600 hover:text-text-dark hover:bg-gray-50">Civil Litigation</a>
           </div>
         </div>
         <div class="nav-dropdown relative">
-          <a href="/about-us.html" class="px-3 py-2 text-white hover:text-accent transition-colors inline-flex items-center gap-1">
+          <a href="/about-us.html" class="px-3 py-2 text-text-dark hover:text-accent transition-colors inline-flex items-center gap-1">
             About Us
             <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 9C18 9 13.5811 15 12 15C10.4188 15 6 9 6 9"/></svg>
           </a>
-          <div class="nav-dropdown-menu absolute top-full left-0 bg-dark border border-white/10 rounded-lg py-2 min-w-[200px] z-50 shadow-xl">
-            <a href="/j-david-horning.html" class="block px-4 py-2 text-sm text-white/80 hover:text-white hover:bg-white/5">J. David Horning</a>
-            <a href="/ryan-mcgrath.html" class="block px-4 py-2 text-sm text-white/80 hover:text-white hover:bg-white/5">Ryan McGrath</a>
-            <a href="/sarah-weerstra.html" class="block px-4 py-2 text-sm text-white/80 hover:text-white hover:bg-white/5">Sarah Weerstra</a>
-            <a href="/richard-horning.html" class="block px-4 py-2 text-sm text-white/80 hover:text-white hover:bg-white/5">Richard Horning</a>
-            <a href="/cassie-lewis.html" class="block px-4 py-2 text-sm text-white/80 hover:text-white hover:bg-white/5">Cassie Lewis</a>
-            <a href="/savannah-kramer.html" class="block px-4 py-2 text-sm text-white/80 hover:text-white hover:bg-white/5">Savannah Kramer</a>
-            <a href="/karena-kase.html" class="block px-4 py-2 text-sm text-white/80 hover:text-white hover:bg-white/5">Karena Kase</a>
+          <div class="nav-dropdown-menu absolute top-full left-0 bg-white border border-gray-200 rounded-lg py-2 min-w-[200px] z-50 shadow-xl">
+            <a href="/j-david-horning.html" class="block px-4 py-2 text-sm text-gray-600 hover:text-text-dark hover:bg-gray-50">J. David Horning</a>
+            <a href="/ryan-mcgrath.html" class="block px-4 py-2 text-sm text-gray-600 hover:text-text-dark hover:bg-gray-50">Ryan McGrath</a>
+            <a href="/sarah-weerstra.html" class="block px-4 py-2 text-sm text-gray-600 hover:text-text-dark hover:bg-gray-50">Sarah Weerstra</a>
+            <a href="/richard-horning.html" class="block px-4 py-2 text-sm text-gray-600 hover:text-text-dark hover:bg-gray-50">Richard Horning</a>
+            <a href="/cassie-lewis.html" class="block px-4 py-2 text-sm text-gray-600 hover:text-text-dark hover:bg-gray-50">Cassie Lewis</a>
+            <a href="/savannah-kramer.html" class="block px-4 py-2 text-sm text-gray-600 hover:text-text-dark hover:bg-gray-50">Savannah Kramer</a>
+            <a href="/karena-kase.html" class="block px-4 py-2 text-sm text-gray-600 hover:text-text-dark hover:bg-gray-50">Karena Kase</a>
           </div>
         </div>
-        <a href="/contact-us.html" class="px-3 py-2 text-white hover:text-accent transition-colors">Contact Us</a>
+        <a href="/contact-us.html" class="px-3 py-2 text-text-dark hover:text-accent transition-colors">Contact Us</a>
       </nav>
       <button class="lg:hidden hamburger" aria-label="Open mobile menu" aria-expanded="false" onclick="document.getElementById('mobile-menu').classList.toggle('open'); this.setAttribute('aria-expanded', this.getAttribute('aria-expanded') === 'false' ? 'true' : 'false');">
         <span></span><span></span><span></span>
       </button>
     </div>
-    <nav id="mobile-menu" class="mobile-menu flex-col bg-dark border-t border-white/10 px-6 pb-6 lg:hidden">
-      <a href="/" class="py-3 text-white border-b border-white/10">Home</a>
-      <a href="/practice-areas.html" class="py-3 text-white border-b border-white/10">Practice Areas</a>
-      <a href="/about-us.html" class="py-3 text-white border-b border-white/10">About Us</a>
-      <a href="/contact-us.html" class="py-3 text-white">Contact Us</a>
+    <nav id="mobile-menu" class="mobile-menu flex-col bg-white border-t border-gray-200 px-6 pb-6 lg:hidden">
+      <a href="/" class="py-3 text-text-dark border-b border-gray-100">Home</a>
+      <a href="/practice-areas.html" class="py-3 text-text-dark border-b border-gray-100">Practice Areas</a>
+      <a href="/about-us.html" class="py-3 text-text-dark border-b border-gray-100">About Us</a>
+      <a href="/contact-us.html" class="py-3 text-text-dark">Contact Us</a>
     </nav>
   </header>
 
   <main>
     <!-- Hero Section -->
     <section data-block-id="contact:hero" class="bg-dark text-white py-20 md:py-28">
-      <div class="max-w-7xl mx-auto px-6">
-        <h1 data-content="hero-title" class="font-heading text-5xl md:text-6xl lg:text-7xl font-medium">Contact us</h1>
+      <div class="max-w-7xl mx-auto px-6 lg:px-10">
+        <h1 data-content="hero-title" class="font-heading text-5xl md:text-6xl lg:text-7xl font-medium">Contact Us</h1>
       </div>
     </section>
 
     <!-- Contact Section -->
     <section data-block-id="contact:form" class="py-20 md:py-28">
-      <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-5 gap-16">
+      <div class="max-w-7xl mx-auto px-6 lg:px-10 grid lg:grid-cols-2 gap-16">
         <!-- Left Column: Contact Info -->
-        <div class="lg:col-span-3 space-y-8">
-          <p data-content="contact-intro" class="text-lg leading-relaxed text-dark">We're here to help with all your business, legacy, and legal needs. Whether you have a question, need guidance, or are ready to get started, our team is just a call or message away.</p>
+        <div class="space-y-8">
+          <p data-content="contact-intro" class="text-lg leading-relaxed text-text-dark">We're here to help with all your business, legacy, and legal needs. Whether you have a question, need guidance, or are ready to get started, our team is just a call or message away.</p>
 
-          <div class="space-y-4">
+          <div class="space-y-5">
             <div class="flex items-center gap-3">
               <svg class="w-5 h-5 text-accent shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
               <div>
                 <p class="text-sm text-muted">Phone</p>
-                <a href="tel:3076863736" class="text-dark font-medium hover:text-accent transition-colors">(307) 686-3736</a>
+                <a href="tel:3076863736" class="text-text-dark font-medium hover:text-accent transition-colors">(307) 686-3736</a>
               </div>
             </div>
 
             <div class="flex items-center gap-3">
-              <svg class="w-5 h-5 text-accent shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/><rect x="2" y="4" width="20" height="16" rx="2"/></svg>
+              <svg class="w-5 h-5 text-accent shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 01-2-2v-5a2 2 0 012-2h16a2 2 0 012 2v5a2 2 0 01-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg>
               <div>
                 <p class="text-sm text-muted">Fax</p>
-                <p class="text-dark font-medium">(307) 696-6013</p>
+                <p class="text-text-dark font-medium">(307) 696-6013</p>
               </div>
             </div>
 
@@ -132,56 +135,38 @@
               <svg class="w-5 h-5 text-accent shrink-0 mt-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
               <div>
                 <p class="text-sm text-muted">Address</p>
-                <a href="https://maps.app.goo.gl/Ep9yGe8xxRtd3pkB8" target="_blank" rel="noopener noreferrer" class="text-dark font-medium hover:text-accent transition-colors">400 S. Douglas Hwy.<br>Gillette, WY 82716</a>
+                <a href="https://maps.app.goo.gl/Ep9yGe8xxRtd3pkB8" target="_blank" rel="noopener noreferrer" class="text-text-dark font-medium hover:text-accent transition-colors">400 S. Douglas Hwy.<br>Gillette, WY 82716</a>
               </div>
-            </div>
-          </div>
-
-          <!-- Review Badges -->
-          <div class="flex flex-wrap gap-6 pt-4">
-            <div class="flex items-center gap-2 bg-bg-light rounded-lg px-4 py-3">
-              <div class="flex items-center gap-0.5 text-accent">
-                <svg class="w-4 h-4" viewBox="0 0 20 20" fill="currentColor"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-                <svg class="w-4 h-4" viewBox="0 0 20 20" fill="currentColor"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-                <svg class="w-4 h-4" viewBox="0 0 20 20" fill="currentColor"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-                <svg class="w-4 h-4" viewBox="0 0 20 20" fill="currentColor"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-                <svg class="w-4 h-4" viewBox="0 0 20 20" fill="currentColor"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-              </div>
-              <span class="text-sm font-medium text-dark">4.8 on Google</span>
-            </div>
-            <div class="flex items-center gap-2 bg-bg-light rounded-lg px-4 py-3">
-              <div class="flex items-center gap-0.5 text-accent">
-                <svg class="w-4 h-4" viewBox="0 0 20 20" fill="currentColor"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-                <svg class="w-4 h-4" viewBox="0 0 20 20" fill="currentColor"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-                <svg class="w-4 h-4" viewBox="0 0 20 20" fill="currentColor"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-                <svg class="w-4 h-4" viewBox="0 0 20 20" fill="currentColor"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-                <svg class="w-4 h-4" viewBox="0 0 20 20" fill="currentColor"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-              </div>
-              <span class="text-sm font-medium text-dark">4.8 on Yelp</span>
             </div>
           </div>
         </div>
 
         <!-- Right Column: Contact Form -->
-        <div class="lg:col-span-2">
+        <div>
           <form data-devtools-form data-form-type="contact" class="space-y-5">
-            <div>
-              <label for="name" class="block text-sm font-medium text-dark mb-1">Name <span class="text-accent">*</span></label>
-              <input type="text" id="name" name="name" required class="w-full border border-border rounded-lg p-3 text-dark focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent transition-colors">
+            <div class="grid grid-cols-2 gap-4">
+              <div>
+                <label for="first-name" class="block text-sm font-medium text-text-dark mb-1">First name</label>
+                <input type="text" id="first-name" name="name" required class="w-full border border-border rounded-lg p-3 text-text-dark focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent transition-colors">
+              </div>
+              <div>
+                <label for="last-name" class="block text-sm font-medium text-text-dark mb-1">Last name</label>
+                <input type="text" id="last-name" name="custom_fields[last_name]" class="w-full border border-border rounded-lg p-3 text-text-dark focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent transition-colors">
+              </div>
             </div>
             <div>
-              <label for="email" class="block text-sm font-medium text-dark mb-1">Email <span class="text-accent">*</span></label>
-              <input type="email" id="email" name="email" required class="w-full border border-border rounded-lg p-3 text-dark focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent transition-colors">
+              <label for="phone" class="block text-sm font-medium text-text-dark mb-1">Phone</label>
+              <input type="tel" id="phone" name="phone" class="w-full border border-border rounded-lg p-3 text-text-dark focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent transition-colors">
             </div>
             <div>
-              <label for="phone" class="block text-sm font-medium text-dark mb-1">Phone</label>
-              <input type="tel" id="phone" name="phone" class="w-full border border-border rounded-lg p-3 text-dark focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent transition-colors">
+              <label for="email" class="block text-sm font-medium text-text-dark mb-1">Email</label>
+              <input type="email" id="email" name="email" required class="w-full border border-border rounded-lg p-3 text-text-dark focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent transition-colors">
             </div>
             <div>
-              <label for="message" class="block text-sm font-medium text-dark mb-1">Message <span class="text-accent">*</span></label>
-              <textarea id="message" name="message" required rows="5" class="w-full border border-border rounded-lg p-3 text-dark focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent transition-colors resize-vertical"></textarea>
+              <label for="message" class="block text-sm font-medium text-text-dark mb-1">Message</label>
+              <textarea id="message" name="message" required rows="5" class="w-full border border-border rounded-lg p-3 text-text-dark focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent transition-colors resize-vertical"></textarea>
             </div>
-            <button type="submit" class="bg-accent text-white rounded-full px-8 py-3 font-medium hover:bg-accent/90 transition-colors">Send Message</button>
+            <button type="submit" class="bg-accent text-white rounded-full px-8 py-3 font-medium hover:bg-accent/90 transition-colors">Send</button>
           </form>
           <script src="https://devtools.prairiegiraffe.com/form-embed.js" data-project="proj_r99yrv9s" data-form="contact" defer></script>
         </div>
@@ -204,40 +189,35 @@
   </main>
 
   <!-- Footer -->
-  <footer data-devtools-partial="footer" class="bg-dark text-white">
-    <div class="max-w-7xl mx-auto px-6 py-16">
-      <div class="flex flex-col md:flex-row justify-between items-start gap-12">
-        <div>
-          <a href="/">
-            <img src="https://devtools.prairiegiraffe.com/api/files/sites/proj_r99yrv9s/1773341263119/assets/mmntlnx552l1u7.webp" alt="Horning, Horning and McGrath, LLC" class="h-10 mb-6" loading="lazy">
-          </a>
-        </div>
-        <div class="grid sm:grid-cols-2 gap-12">
-          <div class="text-white/80 text-sm space-y-1">
-            <p>400 S. Douglas Hwy.</p>
-            <p>Gillette, WY 82716</p>
-            <div class="mt-4 space-y-1">
-              <p>Phone: <a href="tel:3076863736" class="hover:text-white">307-686-3736</a></p>
-              <p>Fax: 307-696-6013</p>
-            </div>
-          </div>
+  <footer data-devtools-partial="footer">
+    <div class="bg-dark-medium text-white">
+      <div class="max-w-7xl mx-auto px-6 lg:px-10 py-12">
+        <div class="flex flex-col gap-8">
           <div>
+            <a href="/" class="inline-block bg-white p-4 rounded">
+              <img src="https://devtools.prairiegiraffe.com/api/files/sites/proj_r99yrv9s/1773341263119/assets/mmntlnx552l1u7.webp" alt="Horning, Horning and McGrath, LLC" class="h-8" loading="lazy">
+            </a>
+          </div>
+          <div class="flex flex-col md:flex-row justify-between items-start gap-8">
+            <div class="flex flex-col sm:flex-row gap-8 sm:gap-16 text-white/80 text-sm">
+              <div class="space-y-1">
+                <p>400 S. Douglas Hwy.</p>
+                <p>Gillette, WY 82716</p>
+              </div>
+              <div class="space-y-1">
+                <p>Phone: <a href="tel:3076863736" class="hover:text-white">307-686-3736</a></p>
+                <p>Fax: 307-696-6013</p>
+              </div>
+            </div>
             <a href="/contact-us.html" class="inline-block border border-white text-white px-6 py-2 rounded-full text-sm font-medium hover:bg-white hover:text-dark transition-colors">Contact Us</a>
           </div>
         </div>
       </div>
     </div>
-    <div class="border-t border-white/10">
-      <div class="max-w-7xl mx-auto px-6 py-6">
-        <div class="flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-white/60">
-          <p>Copyright 2026 &copy; Horning, Horning and McGrath, LLC</p>
-          <nav class="flex gap-6" aria-label="Legal">
-            <a href="#" class="hover:text-white">Privacy Policy</a>
-            <a href="#" class="hover:text-white">Disclaimer</a>
-            <a href="#" class="hover:text-white">Terms of Use</a>
-          </nav>
-        </div>
-        <p class="text-xs text-white/40 mt-4">DISCLAIMER: The Wyoming State Bar does not certify any lawyer as a specialist or expert. Anyone considering a lawyer should independently investigate the lawyer's credentials and ability, and not rely upon advertisements or self-proclaimed expertise.</p>
+    <div class="bg-dark text-white">
+      <div class="max-w-7xl mx-auto px-6 lg:px-10 py-6">
+        <p class="text-sm text-white/60 mb-4">Copyright 2026 &copy; Horning, Horning and McGrath, LLC</p>
+        <p class="text-xs text-white/40">DISCLAIMER: The Wyoming State Bar does not certify any lawyer as a specialist or expert. Anyone considering a lawyer should independently investigate the lawyer's credentials and ability, and not rely upon advertisements or self-proclaimed expertise.</p>
       </div>
     </div>
   </footer>

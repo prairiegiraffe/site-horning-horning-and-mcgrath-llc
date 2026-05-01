@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>About Us - Horning, Horning and McGrath, LLC</title>
-  <meta name="description" content="Meet the team at Horning, Horning and McGrath, LLC — experienced attorneys and staff in Gillette, Wyoming dedicated to business law, estate planning, and more.">
+  <meta name="description" content="Meet the attorneys and staff of Horning, Horning and McGrath, LLC in Gillette, Wyoming. Experienced legal professionals dedicated to your business and legacy.">
   <link rel="icon" href="https://devtools.prairiegiraffe.com/api/files/sites/proj_r99yrv9s/1773341263119/assets/mmntlnxc7ll2f0.svg" sizes="32x32">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,10 +19,13 @@
             primary: '#f7f7f7',
             secondary: '#fc5778',
             accent: '#ec400d',
-            dark: '#1d2939',
+            dark: '#424242',
+            'dark-deep': '#333333',
+            'dark-medium': '#616161',
             muted: '#777f88',
             border: '#c7cace',
             'bg-light': '#f7f7f7',
+            'text-dark': '#1d2939',
           },
           fontFamily: {
             heading: ['"Cormorant Garamond"', 'serif'],
@@ -39,212 +42,193 @@
     .nav-dropdown-menu { display: none; }
     .mobile-menu { display: none; }
     .mobile-menu.open { display: flex; }
-    .hamburger span { display: block; width: 24px; height: 2px; background: #fff; margin: 5px 0; transition: 0.3s; }
+    .hamburger span { display: block; width: 24px; height: 2px; background: #424242; margin: 5px 0; transition: 0.3s; }
   </style>
 </head>
 
 <body>
   <!-- Header -->
-  <header data-devtools-partial="header" class="bg-dark text-white">
-    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+  <header data-devtools-partial="header" class="bg-white border-b border-gray-200">
+    <div class="max-w-7xl mx-auto px-6 lg:px-10 py-4 flex items-center justify-between">
       <a href="/" class="shrink-0">
         <img src="https://devtools.prairiegiraffe.com/api/files/sites/proj_r99yrv9s/1773341263119/assets/mmntlnx725372g.svg" alt="Horning, Horning and McGrath, LLC logo" class="h-10" loading="eager" data-content="header-logo">
       </a>
       <nav class="hidden lg:flex items-center gap-1 text-sm font-medium">
-        <a href="/" class="px-3 py-2 text-white hover:text-accent transition-colors">Home</a>
+        <a href="/" class="px-3 py-2 text-text-dark hover:text-accent transition-colors">Home</a>
         <div class="nav-dropdown relative">
-          <a href="/practice-areas.html" class="px-3 py-2 text-white hover:text-accent transition-colors inline-flex items-center gap-1">
+          <a href="/practice-areas.html" class="px-3 py-2 text-text-dark hover:text-accent transition-colors inline-flex items-center gap-1">
             Practice Areas
             <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 9C18 9 13.5811 15 12 15C10.4188 15 6 9 6 9"/></svg>
           </a>
-          <div class="nav-dropdown-menu absolute top-full left-0 bg-dark border border-white/10 rounded-lg py-2 min-w-[280px] z-50 shadow-xl">
-            <a href="/practice-areas.html#business-and-commercial" class="block px-4 py-2 text-sm text-white/80 hover:text-white hover:bg-white/5">Business and Commercial</a>
-            <a href="/practice-areas.html#oil-gas-energy" class="block px-4 py-2 text-sm text-white/80 hover:text-white hover:bg-white/5">Oil and Gas, Mineral Royalties, and Energy Law</a>
-            <a href="/practice-areas.html#real-estate" class="block px-4 py-2 text-sm text-white/80 hover:text-white hover:bg-white/5">Real Estate and Land Use</a>
-            <a href="/practice-areas.html#ranching-agriculture" class="block px-4 py-2 text-sm text-white/80 hover:text-white hover:bg-white/5">Ranching and Agriculture</a>
-            <a href="/practice-areas.html#estate-planning" class="block px-4 py-2 text-sm text-white/80 hover:text-white hover:bg-white/5">Estate Planning</a>
-            <a href="/practice-areas.html#probate" class="block px-4 py-2 text-sm text-white/80 hover:text-white hover:bg-white/5">Probate</a>
-            <a href="/practice-areas.html#civil-litigation" class="block px-4 py-2 text-sm text-white/80 hover:text-white hover:bg-white/5">Civil Litigation</a>
+          <div class="nav-dropdown-menu absolute top-full left-0 bg-white border border-gray-200 rounded-lg py-2 min-w-[280px] z-50 shadow-xl">
+            <a href="/practice-areas.html#business-and-commercial" class="block px-4 py-2 text-sm text-gray-600 hover:text-text-dark hover:bg-gray-50">Business and Commercial</a>
+            <a href="/practice-areas.html#oil-gas-energy" class="block px-4 py-2 text-sm text-gray-600 hover:text-text-dark hover:bg-gray-50">Oil and Gas, Mineral Royalties, and Energy Law</a>
+            <a href="/practice-areas.html#real-estate" class="block px-4 py-2 text-sm text-gray-600 hover:text-text-dark hover:bg-gray-50">Real Estate and Land Use</a>
+            <a href="/practice-areas.html#ranching-agriculture" class="block px-4 py-2 text-sm text-gray-600 hover:text-text-dark hover:bg-gray-50">Ranching and Agriculture</a>
+            <a href="/practice-areas.html#estate-planning" class="block px-4 py-2 text-sm text-gray-600 hover:text-text-dark hover:bg-gray-50">Estate Planning</a>
+            <a href="/practice-areas.html#probate" class="block px-4 py-2 text-sm text-gray-600 hover:text-text-dark hover:bg-gray-50">Probate</a>
+            <a href="/practice-areas.html#civil-litigation" class="block px-4 py-2 text-sm text-gray-600 hover:text-text-dark hover:bg-gray-50">Civil Litigation</a>
           </div>
         </div>
         <div class="nav-dropdown relative">
-          <a href="/about-us.html" class="px-3 py-2 text-white hover:text-accent transition-colors inline-flex items-center gap-1">
+          <a href="/about-us.html" class="px-3 py-2 text-text-dark hover:text-accent transition-colors inline-flex items-center gap-1">
             About Us
             <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 9C18 9 13.5811 15 12 15C10.4188 15 6 9 6 9"/></svg>
           </a>
-          <div class="nav-dropdown-menu absolute top-full left-0 bg-dark border border-white/10 rounded-lg py-2 min-w-[200px] z-50 shadow-xl">
-            <a href="/j-david-horning.html" class="block px-4 py-2 text-sm text-white/80 hover:text-white hover:bg-white/5">J. David Horning</a>
-            <a href="/ryan-mcgrath.html" class="block px-4 py-2 text-sm text-white/80 hover:text-white hover:bg-white/5">Ryan McGrath</a>
-            <a href="/sarah-weerstra.html" class="block px-4 py-2 text-sm text-white/80 hover:text-white hover:bg-white/5">Sarah Weerstra</a>
-            <a href="/richard-horning.html" class="block px-4 py-2 text-sm text-white/80 hover:text-white hover:bg-white/5">Richard Horning</a>
-            <a href="/cassie-lewis.html" class="block px-4 py-2 text-sm text-white/80 hover:text-white hover:bg-white/5">Cassie Lewis</a>
-            <a href="/savannah-kramer.html" class="block px-4 py-2 text-sm text-white/80 hover:text-white hover:bg-white/5">Savannah Kramer</a>
-            <a href="/karena-kase.html" class="block px-4 py-2 text-sm text-white/80 hover:text-white hover:bg-white/5">Karena Kase</a>
+          <div class="nav-dropdown-menu absolute top-full left-0 bg-white border border-gray-200 rounded-lg py-2 min-w-[200px] z-50 shadow-xl">
+            <a href="/j-david-horning.html" class="block px-4 py-2 text-sm text-gray-600 hover:text-text-dark hover:bg-gray-50">J. David Horning</a>
+            <a href="/ryan-mcgrath.html" class="block px-4 py-2 text-sm text-gray-600 hover:text-text-dark hover:bg-gray-50">Ryan McGrath</a>
+            <a href="/sarah-weerstra.html" class="block px-4 py-2 text-sm text-gray-600 hover:text-text-dark hover:bg-gray-50">Sarah Weerstra</a>
+            <a href="/richard-horning.html" class="block px-4 py-2 text-sm text-gray-600 hover:text-text-dark hover:bg-gray-50">Richard Horning</a>
+            <a href="/cassie-lewis.html" class="block px-4 py-2 text-sm text-gray-600 hover:text-text-dark hover:bg-gray-50">Cassie Lewis</a>
+            <a href="/savannah-kramer.html" class="block px-4 py-2 text-sm text-gray-600 hover:text-text-dark hover:bg-gray-50">Savannah Kramer</a>
+            <a href="/karena-kase.html" class="block px-4 py-2 text-sm text-gray-600 hover:text-text-dark hover:bg-gray-50">Karena Kase</a>
           </div>
         </div>
-        <a href="/contact-us.html" class="px-3 py-2 text-white hover:text-accent transition-colors">Contact Us</a>
+        <a href="/contact-us.html" class="px-3 py-2 text-text-dark hover:text-accent transition-colors">Contact Us</a>
       </nav>
       <button class="lg:hidden hamburger" aria-label="Open mobile menu" aria-expanded="false" onclick="document.getElementById('mobile-menu').classList.toggle('open'); this.setAttribute('aria-expanded', this.getAttribute('aria-expanded') === 'false' ? 'true' : 'false');">
         <span></span><span></span><span></span>
       </button>
     </div>
-    <nav id="mobile-menu" class="mobile-menu flex-col bg-dark border-t border-white/10 px-6 pb-6 lg:hidden">
-      <a href="/" class="py-3 text-white border-b border-white/10">Home</a>
-      <a href="/practice-areas.html" class="py-3 text-white border-b border-white/10">Practice Areas</a>
-      <a href="/about-us.html" class="py-3 text-white border-b border-white/10">About Us</a>
-      <a href="/contact-us.html" class="py-3 text-white">Contact Us</a>
+    <nav id="mobile-menu" class="mobile-menu flex-col bg-white border-t border-gray-200 px-6 pb-6 lg:hidden">
+      <a href="/" class="py-3 text-text-dark border-b border-gray-100">Home</a>
+      <a href="/practice-areas.html" class="py-3 text-text-dark border-b border-gray-100">Practice Areas</a>
+      <a href="/about-us.html" class="py-3 text-text-dark border-b border-gray-100">About Us</a>
+      <a href="/contact-us.html" class="py-3 text-text-dark">Contact Us</a>
     </nav>
   </header>
 
   <main>
-    <!-- Hero Section -->
-    <section data-block-id="about:hero" class="bg-dark text-white py-20 md:py-28">
-      <div class="max-w-7xl mx-auto px-6">
-        <p data-content="hero-accent" class="text-accent font-medium mb-4">Who we are -</p>
-        <h1 data-content="hero-title" class="font-heading text-5xl md:text-6xl lg:text-7xl font-medium">Our People</h1>
+    <!-- Hero Section: split layout with dark text left, photo right -->
+    <section data-block-id="about-us:hero" class="grid lg:grid-cols-2">
+      <div class="bg-dark text-white flex items-center px-10 lg:px-16 py-32 lg:py-44">
+        <div>
+          <p data-content="hero-subtitle" class="text-accent text-sm font-medium mb-4">Who we are -</p>
+          <h1 data-content="hero-title" class="font-heading text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-medium leading-[1.05]">Our People</h1>
+        </div>
       </div>
+      <div class="hidden lg:block bg-cover bg-center min-h-[500px]" style="background-image: url('https://devtools.prairiegiraffe.com/api/files/sites/proj_r99yrv9s/1773341263119/assets/mmntlnzsub7kuw.webp');" data-content="hero-image"></div>
     </section>
 
     <!-- Team Grid Section -->
-    <section data-block-id="about:team" class="bg-dark text-white py-16 md:py-24">
-      <div class="max-w-7xl mx-auto px-6">
-        <!-- Row 1: Attorneys -->
-        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+    <section data-block-id="about-us:team" class="py-20 md:py-28">
+      <div class="max-w-7xl mx-auto px-6 lg:px-10">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+
           <!-- J. David Horning -->
-          <div class="group">
-            <a href="/j-david-horning.html" class="block">
-              <div class="aspect-[3/4] overflow-hidden rounded-lg mb-4">
-                <img src="https://devtools.prairiegiraffe.com/api/files/sites/proj_r99yrv9s/1773341263119/assets/mmntmwcat6oclx.jpg" alt="J. David Horning" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy" data-content="team-photo-horning-jd">
-              </div>
+          <div data-block-id="about-us:team-member-1" class="text-center">
+            <a href="/j-david-horning.html">
+              <img src="https://devtools.prairiegiraffe.com/api/files/sites/proj_r99yrv9s/1773341263119/assets/mmntmwcat6oclx.jpg" alt="J. David Horning" class="w-full aspect-[3/4] object-cover mb-4" loading="lazy" data-content="team-photo-1">
             </a>
-            <h3 data-content="team-name-horning-jd" class="font-heading text-xl font-medium mb-1">J. David Horning</h3>
-            <p data-content="team-title-horning-jd" class="text-white/70 text-sm mb-3">Attorney</p>
+            <h3 data-content="team-name-1" class="font-heading font-medium text-lg">J. David Horning</h3>
+            <p data-content="team-title-1" class="text-sm text-muted">Attorney</p>
             <a href="/j-david-horning.html" class="text-accent text-sm font-medium hover:underline">Learn More</a>
           </div>
 
           <!-- Ryan McGrath -->
-          <div class="group">
-            <a href="/ryan-mcgrath.html" class="block">
-              <div class="aspect-[3/4] overflow-hidden rounded-lg mb-4">
-                <img src="https://devtools.prairiegiraffe.com/api/files/sites/proj_r99yrv9s/1773341263119/assets/mmntnkh9gltbw6.jpg" alt="Ryan McGrath" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy" data-content="team-photo-mcgrath">
-              </div>
+          <div data-block-id="about-us:team-member-2" class="text-center">
+            <a href="/ryan-mcgrath.html">
+              <img src="https://devtools.prairiegiraffe.com/api/files/sites/proj_r99yrv9s/1773341263119/assets/mmntnkh9gltbw6.jpg" alt="Ryan McGrath" class="w-full aspect-[3/4] object-cover mb-4" loading="lazy" data-content="team-photo-2">
             </a>
-            <h3 data-content="team-name-mcgrath" class="font-heading text-xl font-medium mb-1">Ryan McGrath</h3>
-            <p data-content="team-title-mcgrath" class="text-white/70 text-sm mb-3">Attorney</p>
+            <h3 data-content="team-name-2" class="font-heading font-medium text-lg">Ryan McGrath</h3>
+            <p data-content="team-title-2" class="text-sm text-muted">Attorney</p>
             <a href="/ryan-mcgrath.html" class="text-accent text-sm font-medium hover:underline">Learn More</a>
           </div>
 
           <!-- Sarah Weerstra -->
-          <div class="group">
-            <a href="/sarah-weerstra.html" class="block">
-              <div class="aspect-[3/4] overflow-hidden rounded-lg mb-4">
-                <img src="https://devtools.prairiegiraffe.com/api/files/sites/proj_r99yrv9s/1773341263119/assets/mmntnpw22gph0r.jpg" alt="Sarah Weerstra" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy" data-content="team-photo-weerstra">
-              </div>
+          <div data-block-id="about-us:team-member-3" class="text-center">
+            <a href="/sarah-weerstra.html">
+              <img src="https://devtools.prairiegiraffe.com/api/files/sites/proj_r99yrv9s/1773341263119/assets/mmntnpw22gph0r.jpg" alt="Sarah Weerstra" class="w-full aspect-[3/4] object-cover mb-4" loading="lazy" data-content="team-photo-3">
             </a>
-            <h3 data-content="team-name-weerstra" class="font-heading text-xl font-medium mb-1">Sarah Weerstra</h3>
-            <p data-content="team-title-weerstra" class="text-white/70 text-sm mb-3">Attorney</p>
+            <h3 data-content="team-name-3" class="font-heading font-medium text-lg">Sarah Weerstra</h3>
+            <p data-content="team-title-3" class="text-sm text-muted">Attorney</p>
             <a href="/sarah-weerstra.html" class="text-accent text-sm font-medium hover:underline">Learn More</a>
           </div>
 
           <!-- Richard Horning -->
-          <div class="group">
-            <a href="/richard-horning.html" class="block">
-              <div class="aspect-[3/4] overflow-hidden rounded-lg mb-4">
-                <img src="https://devtools.prairiegiraffe.com/api/files/sites/proj_r99yrv9s/1773341263119/assets/mmntnfarbukv7a.jpg" alt="Richard Horning" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy" data-content="team-photo-horning-r">
-              </div>
+          <div data-block-id="about-us:team-member-4" class="text-center">
+            <a href="/richard-horning.html">
+              <img src="https://devtools.prairiegiraffe.com/api/files/sites/proj_r99yrv9s/1773341263119/assets/mmntnfarbukv7a.jpg" alt="Richard Horning" class="w-full aspect-[3/4] object-cover mb-4" loading="lazy" data-content="team-photo-4">
             </a>
-            <h3 data-content="team-name-horning-r" class="font-heading text-xl font-medium mb-1">Richard Horning</h3>
-            <p data-content="team-title-horning-r" class="text-white/70 text-sm mb-3">Attorney - Retired</p>
+            <h3 data-content="team-name-4" class="font-heading font-medium text-lg">Richard Horning</h3>
+            <p data-content="team-title-4" class="text-sm text-muted">Attorney - Retired</p>
             <a href="/richard-horning.html" class="text-accent text-sm font-medium hover:underline">Learn More</a>
           </div>
-        </div>
 
-        <!-- Row 2: Staff -->
-        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
           <!-- Cassie Lewis -->
-          <div class="group">
-            <a href="/cassie-lewis.html" class="block">
-              <div class="aspect-[3/4] overflow-hidden rounded-lg mb-4">
-                <img src="https://devtools.prairiegiraffe.com/api/files/sites/proj_r99yrv9s/1773341263119/assets/mmntmjs4tt8f9f.jpg" alt="Cassie Lewis" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy" data-content="team-photo-lewis">
-              </div>
+          <div data-block-id="about-us:team-member-5" class="text-center">
+            <a href="/cassie-lewis.html">
+              <img src="https://devtools.prairiegiraffe.com/api/files/sites/proj_r99yrv9s/1773341263119/assets/mmntmjs4tt8f9f.jpg" alt="Cassie Lewis" class="w-full aspect-[3/4] object-cover mb-4" loading="lazy" data-content="team-photo-5">
             </a>
-            <h3 data-content="team-name-lewis" class="font-heading text-xl font-medium mb-1">Cassie Lewis</h3>
-            <p data-content="team-title-lewis" class="text-white/70 text-sm mb-3">Paralegal</p>
+            <h3 data-content="team-name-5" class="font-heading font-medium text-lg">Cassie Lewis</h3>
+            <p data-content="team-title-5" class="text-sm text-muted">Paralegal</p>
             <a href="/cassie-lewis.html" class="text-accent text-sm font-medium hover:underline">Learn More</a>
           </div>
 
           <!-- Savannah Kramer -->
-          <div class="group">
-            <a href="/savannah-kramer.html" class="block">
-              <div class="aspect-[3/4] overflow-hidden rounded-lg mb-4">
-                <img src="https://devtools.prairiegiraffe.com/api/files/sites/proj_r99yrv9s/1773341263119/assets/mmntnwprh42hl6.jpg" alt="Savannah Kramer" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy" data-content="team-photo-kramer">
-              </div>
+          <div data-block-id="about-us:team-member-6" class="text-center">
+            <a href="/savannah-kramer.html">
+              <img src="https://devtools.prairiegiraffe.com/api/files/sites/proj_r99yrv9s/1773341263119/assets/mmntnwprh42hl6.jpg" alt="Savannah Kramer" class="w-full aspect-[3/4] object-cover mb-4" loading="lazy" data-content="team-photo-6">
             </a>
-            <h3 data-content="team-name-kramer" class="font-heading text-xl font-medium mb-1">Savannah Kramer</h3>
-            <p data-content="team-title-kramer" class="text-white/70 text-sm mb-3">Paralegal</p>
+            <h3 data-content="team-name-6" class="font-heading font-medium text-lg">Savannah Kramer</h3>
+            <p data-content="team-title-6" class="text-sm text-muted">Paralegal</p>
             <a href="/savannah-kramer.html" class="text-accent text-sm font-medium hover:underline">Learn More</a>
           </div>
 
           <!-- Karena Kase -->
-          <div class="group">
-            <a href="/karena-kase.html" class="block">
-              <div class="aspect-[3/4] overflow-hidden rounded-lg mb-4">
-                <img src="https://devtools.prairiegiraffe.com/api/files/sites/proj_r99yrv9s/1773341263119/assets/mmntn2h1xpzac3.jpg" alt="Karena Kase" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy" data-content="team-photo-kase">
-              </div>
+          <div data-block-id="about-us:team-member-7" class="text-center">
+            <a href="/karena-kase.html">
+              <img src="https://devtools.prairiegiraffe.com/api/files/sites/proj_r99yrv9s/1773341263119/assets/mmntn2h1xpzac3.jpg" alt="Karena Kase" class="w-full aspect-[3/4] object-cover mb-4" loading="lazy" data-content="team-photo-7">
             </a>
-            <h3 data-content="team-name-kase" class="font-heading text-xl font-medium mb-1">Karena Kase</h3>
-            <p data-content="team-title-kase" class="text-white/70 text-sm mb-3">Receptionist</p>
+            <h3 data-content="team-name-7" class="font-heading font-medium text-lg">Karena Kase</h3>
+            <p data-content="team-title-7" class="text-sm text-muted">Receptionist</p>
             <a href="/karena-kase.html" class="text-accent text-sm font-medium hover:underline">Learn More</a>
           </div>
+
         </div>
       </div>
     </section>
 
     <!-- CTA Section -->
-    <section data-block-id="about:cta" class="py-20 md:py-28 text-center bg-white">
+    <section data-block-id="about-us:cta" class="py-20 md:py-28 text-center">
       <div class="max-w-3xl mx-auto px-6">
-        <h2 data-content="cta-title" class="font-heading text-4xl md:text-5xl lg:text-6xl font-medium mb-6">Protect Your Business.<br>Preserve Your Legacy.</h2>
-        <p data-content="cta-text" class="text-muted text-lg mb-8 max-w-xl mx-auto">Partner with HHM to ensure the future of your business and family is in trusted hands. Let us guide you through every stage of growth, planning, and protection with personalized legal solutions tailored to your needs.</p>
+        <h2 data-content="cta-title" class="font-heading text-4xl md:text-5xl lg:text-6xl font-medium mb-8">Protect Your Business.<br>Preserve Your Legacy.</h2>
         <a href="/contact-us.html" class="inline-block bg-accent text-white px-8 py-3 rounded-full font-medium hover:bg-accent/90 transition-colors">Contact Us</a>
       </div>
     </section>
   </main>
 
   <!-- Footer -->
-  <footer data-devtools-partial="footer" class="bg-dark text-white">
-    <div class="max-w-7xl mx-auto px-6 py-16">
-      <div class="flex flex-col md:flex-row justify-between items-start gap-12">
-        <div>
-          <a href="/">
-            <img src="https://devtools.prairiegiraffe.com/api/files/sites/proj_r99yrv9s/1773341263119/assets/mmntlnx552l1u7.webp" alt="Horning, Horning and McGrath, LLC" class="h-10 mb-6" loading="lazy">
-          </a>
-        </div>
-        <div class="grid sm:grid-cols-2 gap-12">
-          <div class="text-white/80 text-sm space-y-1">
-            <p>400 S. Douglas Hwy.</p>
-            <p>Gillette, WY 82716</p>
-            <div class="mt-4 space-y-1">
-              <p>Phone: <a href="tel:3076863736" class="hover:text-white">307-686-3736</a></p>
-              <p>Fax: 307-696-6013</p>
-            </div>
-          </div>
+  <footer data-devtools-partial="footer">
+    <div class="bg-dark-medium text-white">
+      <div class="max-w-7xl mx-auto px-6 lg:px-10 py-12">
+        <div class="flex flex-col gap-8">
           <div>
+            <a href="/" class="inline-block bg-white p-4 rounded">
+              <img src="https://devtools.prairiegiraffe.com/api/files/sites/proj_r99yrv9s/1773341263119/assets/mmntlnx552l1u7.webp" alt="Horning, Horning and McGrath, LLC" class="h-8" loading="lazy">
+            </a>
+          </div>
+          <div class="flex flex-col md:flex-row justify-between items-start gap-8">
+            <div class="flex flex-col sm:flex-row gap-8 sm:gap-16 text-white/80 text-sm">
+              <div class="space-y-1">
+                <p>400 S. Douglas Hwy.</p>
+                <p>Gillette, WY 82716</p>
+              </div>
+              <div class="space-y-1">
+                <p>Phone: <a href="tel:3076863736" class="hover:text-white">307-686-3736</a></p>
+                <p>Fax: 307-696-6013</p>
+              </div>
+            </div>
             <a href="/contact-us.html" class="inline-block border border-white text-white px-6 py-2 rounded-full text-sm font-medium hover:bg-white hover:text-dark transition-colors">Contact Us</a>
           </div>
         </div>
       </div>
     </div>
-    <div class="border-t border-white/10">
-      <div class="max-w-7xl mx-auto px-6 py-6">
-        <div class="flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-white/60">
-          <p>Copyright 2026 &copy; Horning, Horning and McGrath, LLC</p>
-          <nav class="flex gap-6" aria-label="Legal">
-            <a href="#" class="hover:text-white">Privacy Policy</a>
-            <a href="#" class="hover:text-white">Disclaimer</a>
-            <a href="#" class="hover:text-white">Terms of Use</a>
-          </nav>
-        </div>
-        <p class="text-xs text-white/40 mt-4">DISCLAIMER: The Wyoming State Bar does not certify any lawyer as a specialist or expert. Anyone considering a lawyer should independently investigate the lawyer's credentials and ability, and not rely upon advertisements or self-proclaimed expertise.</p>
+    <div class="bg-dark text-white">
+      <div class="max-w-7xl mx-auto px-6 lg:px-10 py-6">
+        <p class="text-sm text-white/60 mb-4">Copyright 2026 &copy; Horning, Horning and McGrath, LLC</p>
+        <p class="text-xs text-white/40">DISCLAIMER: The Wyoming State Bar does not certify any lawyer as a specialist or expert. Anyone considering a lawyer should independently investigate the lawyer's credentials and ability, and not rely upon advertisements or self-proclaimed expertise.</p>
       </div>
     </div>
   </footer>

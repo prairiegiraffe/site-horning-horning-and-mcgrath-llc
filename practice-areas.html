@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Practice Areas - Horning, Horning and McGrath, LLC</title>
-  <meta name="description" content="Explore the practice areas of Horning, Horning and McGrath, LLC in Gillette, Wyoming. Business law, estate planning, real estate, oil and gas, probate, and civil litigation.">
+  <meta name="description" content="Explore HHM's practice areas including business and commercial law, oil and gas, real estate, ranching, estate planning, probate, and civil litigation in Gillette, Wyoming.">
   <link rel="icon" href="https://devtools.prairiegiraffe.com/api/files/sites/proj_r99yrv9s/1773341263119/assets/mmntlnxc7ll2f0.svg" sizes="32x32">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,10 +19,13 @@
             primary: '#f7f7f7',
             secondary: '#fc5778',
             accent: '#ec400d',
-            dark: '#1d2939',
+            dark: '#424242',
+            'dark-deep': '#333333',
+            'dark-medium': '#616161',
             muted: '#777f88',
             border: '#c7cace',
             'bg-light': '#f7f7f7',
+            'text-dark': '#1d2939',
           },
           fontFamily: {
             heading: ['"Cormorant Garamond"', 'serif'],
@@ -39,152 +42,159 @@
     .nav-dropdown-menu { display: none; }
     .mobile-menu { display: none; }
     .mobile-menu.open { display: flex; }
-    .hamburger span { display: block; width: 24px; height: 2px; background: #fff; margin: 5px 0; transition: 0.3s; }
+    .hamburger span { display: block; width: 24px; height: 2px; background: #424242; margin: 5px 0; transition: 0.3s; }
   </style>
 </head>
 
 <body>
   <!-- Header -->
-  <header data-devtools-partial="header" class="bg-dark text-white">
-    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+  <header data-devtools-partial="header" class="bg-white border-b border-gray-200">
+    <div class="max-w-7xl mx-auto px-6 lg:px-10 py-4 flex items-center justify-between">
       <a href="/" class="shrink-0">
         <img src="https://devtools.prairiegiraffe.com/api/files/sites/proj_r99yrv9s/1773341263119/assets/mmntlnx725372g.svg" alt="Horning, Horning and McGrath, LLC logo" class="h-10" loading="eager" data-content="header-logo">
       </a>
       <nav class="hidden lg:flex items-center gap-1 text-sm font-medium">
-        <a href="/" class="px-3 py-2 text-white hover:text-accent transition-colors">Home</a>
+        <a href="/" class="px-3 py-2 text-text-dark hover:text-accent transition-colors">Home</a>
         <div class="nav-dropdown relative">
-          <a href="/practice-areas.html" class="px-3 py-2 text-white hover:text-accent transition-colors inline-flex items-center gap-1">
+          <a href="/practice-areas.html" class="px-3 py-2 text-text-dark hover:text-accent transition-colors inline-flex items-center gap-1">
             Practice Areas
             <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 9C18 9 13.5811 15 12 15C10.4188 15 6 9 6 9"/></svg>
           </a>
-          <div class="nav-dropdown-menu absolute top-full left-0 bg-dark border border-white/10 rounded-lg py-2 min-w-[280px] z-50 shadow-xl">
-            <a href="/practice-areas.html#business-and-commercial" class="block px-4 py-2 text-sm text-white/80 hover:text-white hover:bg-white/5">Business and Commercial</a>
-            <a href="/practice-areas.html#oil-gas-energy" class="block px-4 py-2 text-sm text-white/80 hover:text-white hover:bg-white/5">Oil and Gas, Mineral Royalties, and Energy Law</a>
-            <a href="/practice-areas.html#real-estate" class="block px-4 py-2 text-sm text-white/80 hover:text-white hover:bg-white/5">Real Estate and Land Use</a>
-            <a href="/practice-areas.html#ranching-agriculture" class="block px-4 py-2 text-sm text-white/80 hover:text-white hover:bg-white/5">Ranching and Agriculture</a>
-            <a href="/practice-areas.html#estate-planning" class="block px-4 py-2 text-sm text-white/80 hover:text-white hover:bg-white/5">Estate Planning</a>
-            <a href="/practice-areas.html#probate" class="block px-4 py-2 text-sm text-white/80 hover:text-white hover:bg-white/5">Probate</a>
-            <a href="/practice-areas.html#civil-litigation" class="block px-4 py-2 text-sm text-white/80 hover:text-white hover:bg-white/5">Civil Litigation</a>
+          <div class="nav-dropdown-menu absolute top-full left-0 bg-white border border-gray-200 rounded-lg py-2 min-w-[280px] z-50 shadow-xl">
+            <a href="/practice-areas.html#business-and-commercial" class="block px-4 py-2 text-sm text-gray-600 hover:text-text-dark hover:bg-gray-50">Business and Commercial</a>
+            <a href="/practice-areas.html#oil-gas-energy" class="block px-4 py-2 text-sm text-gray-600 hover:text-text-dark hover:bg-gray-50">Oil and Gas, Mineral Royalties, and Energy Law</a>
+            <a href="/practice-areas.html#real-estate" class="block px-4 py-2 text-sm text-gray-600 hover:text-text-dark hover:bg-gray-50">Real Estate and Land Use</a>
+            <a href="/practice-areas.html#ranching-agriculture" class="block px-4 py-2 text-sm text-gray-600 hover:text-text-dark hover:bg-gray-50">Ranching and Agriculture</a>
+            <a href="/practice-areas.html#estate-planning" class="block px-4 py-2 text-sm text-gray-600 hover:text-text-dark hover:bg-gray-50">Estate Planning</a>
+            <a href="/practice-areas.html#probate" class="block px-4 py-2 text-sm text-gray-600 hover:text-text-dark hover:bg-gray-50">Probate</a>
+            <a href="/practice-areas.html#civil-litigation" class="block px-4 py-2 text-sm text-gray-600 hover:text-text-dark hover:bg-gray-50">Civil Litigation</a>
           </div>
         </div>
         <div class="nav-dropdown relative">
-          <a href="/about-us.html" class="px-3 py-2 text-white hover:text-accent transition-colors inline-flex items-center gap-1">
+          <a href="/about-us.html" class="px-3 py-2 text-text-dark hover:text-accent transition-colors inline-flex items-center gap-1">
             About Us
             <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 9C18 9 13.5811 15 12 15C10.4188 15 6 9 6 9"/></svg>
           </a>
-          <div class="nav-dropdown-menu absolute top-full left-0 bg-dark border border-white/10 rounded-lg py-2 min-w-[200px] z-50 shadow-xl">
-            <a href="/j-david-horning.html" class="block px-4 py-2 text-sm text-white/80 hover:text-white hover:bg-white/5">J. David Horning</a>
-            <a href="/ryan-mcgrath.html" class="block px-4 py-2 text-sm text-white/80 hover:text-white hover:bg-white/5">Ryan McGrath</a>
-            <a href="/sarah-weerstra.html" class="block px-4 py-2 text-sm text-white/80 hover:text-white hover:bg-white/5">Sarah Weerstra</a>
-            <a href="/richard-horning.html" class="block px-4 py-2 text-sm text-white/80 hover:text-white hover:bg-white/5">Richard Horning</a>
-            <a href="/cassie-lewis.html" class="block px-4 py-2 text-sm text-white/80 hover:text-white hover:bg-white/5">Cassie Lewis</a>
-            <a href="/savannah-kramer.html" class="block px-4 py-2 text-sm text-white/80 hover:text-white hover:bg-white/5">Savannah Kramer</a>
-            <a href="/karena-kase.html" class="block px-4 py-2 text-sm text-white/80 hover:text-white hover:bg-white/5">Karena Kase</a>
+          <div class="nav-dropdown-menu absolute top-full left-0 bg-white border border-gray-200 rounded-lg py-2 min-w-[200px] z-50 shadow-xl">
+            <a href="/j-david-horning.html" class="block px-4 py-2 text-sm text-gray-600 hover:text-text-dark hover:bg-gray-50">J. David Horning</a>
+            <a href="/ryan-mcgrath.html" class="block px-4 py-2 text-sm text-gray-600 hover:text-text-dark hover:bg-gray-50">Ryan McGrath</a>
+            <a href="/sarah-weerstra.html" class="block px-4 py-2 text-sm text-gray-600 hover:text-text-dark hover:bg-gray-50">Sarah Weerstra</a>
+            <a href="/richard-horning.html" class="block px-4 py-2 text-sm text-gray-600 hover:text-text-dark hover:bg-gray-50">Richard Horning</a>
+            <a href="/cassie-lewis.html" class="block px-4 py-2 text-sm text-gray-600 hover:text-text-dark hover:bg-gray-50">Cassie Lewis</a>
+            <a href="/savannah-kramer.html" class="block px-4 py-2 text-sm text-gray-600 hover:text-text-dark hover:bg-gray-50">Savannah Kramer</a>
+            <a href="/karena-kase.html" class="block px-4 py-2 text-sm text-gray-600 hover:text-text-dark hover:bg-gray-50">Karena Kase</a>
           </div>
         </div>
-        <a href="/contact-us.html" class="px-3 py-2 text-white hover:text-accent transition-colors">Contact Us</a>
+        <a href="/contact-us.html" class="px-3 py-2 text-text-dark hover:text-accent transition-colors">Contact Us</a>
       </nav>
       <button class="lg:hidden hamburger" aria-label="Open mobile menu" aria-expanded="false" onclick="document.getElementById('mobile-menu').classList.toggle('open'); this.setAttribute('aria-expanded', this.getAttribute('aria-expanded') === 'false' ? 'true' : 'false');">
         <span></span><span></span><span></span>
       </button>
     </div>
-    <nav id="mobile-menu" class="mobile-menu flex-col bg-dark border-t border-white/10 px-6 pb-6 lg:hidden">
-      <a href="/" class="py-3 text-white border-b border-white/10">Home</a>
-      <a href="/practice-areas.html" class="py-3 text-white border-b border-white/10">Practice Areas</a>
-      <a href="/about-us.html" class="py-3 text-white border-b border-white/10">About Us</a>
-      <a href="/contact-us.html" class="py-3 text-white">Contact Us</a>
+    <nav id="mobile-menu" class="mobile-menu flex-col bg-white border-t border-gray-200 px-6 pb-6 lg:hidden">
+      <a href="/" class="py-3 text-text-dark border-b border-gray-100">Home</a>
+      <a href="/practice-areas.html" class="py-3 text-text-dark border-b border-gray-100">Practice Areas</a>
+      <a href="/about-us.html" class="py-3 text-text-dark border-b border-gray-100">About Us</a>
+      <a href="/contact-us.html" class="py-3 text-text-dark">Contact Us</a>
     </nav>
   </header>
 
   <main>
-    <!-- Hero Section -->
-    <section data-block-id="practice-areas:hero" class="bg-dark text-white py-24 md:py-36 lg:py-44">
-      <div class="max-w-7xl mx-auto px-6">
-        <h1 data-content="hero-title" class="font-heading text-5xl md:text-6xl lg:text-7xl font-medium leading-tight">Practice Areas</h1>
+    <!-- Hero Section: split layout with dark text left, photo right -->
+    <section data-block-id="practice-areas:hero" class="grid lg:grid-cols-2">
+      <div class="bg-dark text-white flex items-center px-10 lg:px-16 py-32 lg:py-44">
+        <h1 data-content="hero-title" class="font-heading text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-medium leading-[1.05]">Practice Areas</h1>
       </div>
+      <div class="hidden lg:block bg-cover bg-center min-h-[500px]" style="background-image: url('https://devtools.prairiegiraffe.com/api/files/sites/proj_r99yrv9s/1773341263119/assets/mmntloa1wlmzsr.webp');" data-content="hero-image"></div>
     </section>
 
-    <!-- Practice Area Sections -->
-    <section data-block-id="practice-areas:details" class="bg-bg-light py-20 md:py-28">
-      <div class="max-w-7xl mx-auto px-6">
+    <!-- Practice Areas Content -->
+    <section data-block-id="practice-areas:content" class="bg-bg-light py-20 md:py-28">
+      <div class="max-w-7xl mx-auto px-6 lg:px-10">
 
         <!-- Business and Commercial -->
-        <div id="business-and-commercial" class="grid lg:grid-cols-3 gap-10 lg:gap-16 py-12">
+        <div id="business-and-commercial" class="grid lg:grid-cols-3 gap-8 lg:gap-16 py-12">
           <div class="lg:col-span-1">
-            <h2 data-content="business-commercial-title" class="font-heading text-3xl md:text-4xl font-medium">Business and Commercial</h2>
+            <h2 data-content="business-commercial-title" class="font-heading text-3xl md:text-4xl font-medium text-text-dark">Business and Commercial</h2>
           </div>
-          <div class="lg:col-span-2 space-y-5 text-base md:text-lg leading-relaxed text-dark">
-            <p data-content="business-commercial-text-1">As your general business partner, we provide counsel and structure for your business's ultimate success. HHM is a trusted source knowledgeable in the law and regulations affecting your business and the impact those have on your business as laws change and your business needs evolve. From mergers, acquisitions, and sales to real estate acquisitions and leases to employment agreements and disputes, to contract review, our attorneys are a valuable resource to ensure your business is protected and remains profitable, no matter the changes that come your way. As the economy changes and impacts your business, we'll be there with you through ups and downs rooting for and helping you succeed. HHM can be your outside general counsel for a fraction of the cost of hiring an in-house attorney.</p>
-            <p data-content="business-commercial-text-2">As a small business, HHM understands the toll outside impacts have on your business and we want success for you – that's why we practice practical, efficient, and conscientious representation – to honor you and your business.</p>
+          <div class="lg:col-span-2 space-y-5 text-base md:text-lg leading-relaxed text-text-dark font-light">
+            <p data-content="business-commercial-p1">As your general business partner, we provide counsel and structure for your business's ultimate success. HHM is a trusted source knowledgeable in the law and regulations affecting your business and the impact those have on your business as laws change and your business needs evolve. From mergers, acquisitions, and sales to real estate acquisitions and leases to employment agreements and disputes, to contract review, our attorneys are a valuable resource to ensure your business is protected and remains profitable, no matter the changes that come your way. As the economy changes and impacts your business, we'll be there with you through ups and downs rooting for and helping you succeed. HHM can be your outside general counsel for a fraction of the cost of hiring an in-house attorney.</p>
+            <p data-content="business-commercial-p2">As a small business, HHM understands the toll outside impacts have on your business and we want success for you – that's why we practice practical, efficient, and conscientious representation – to honor you and your business.</p>
           </div>
         </div>
-        <hr class="border-border">
+
+        <hr class="border-gray-300">
 
         <!-- Oil and Gas, Mineral Royalties and Energy Law -->
-        <div id="oil-gas-energy" class="grid lg:grid-cols-3 gap-10 lg:gap-16 py-12">
+        <div id="oil-gas-energy" class="grid lg:grid-cols-3 gap-8 lg:gap-16 py-12">
           <div class="lg:col-span-1">
-            <h2 data-content="oil-gas-energy-title" class="font-heading text-3xl md:text-4xl font-medium">Oil and Gas, Mineral Royalties and Energy Law</h2>
+            <h2 data-content="oil-gas-energy-title" class="font-heading text-3xl md:text-4xl font-medium text-text-dark">Oil and Gas, Mineral Royalties and Energy Law</h2>
           </div>
-          <div class="lg:col-span-2 space-y-5 text-base md:text-lg leading-relaxed text-dark">
-            <p data-content="oil-gas-energy-text-1">Oil and gas and/or mineral royalties are often an important piece to your legacy and we want to help you recognize and utilize these assets to their full potential. Let us help you negotiate the best agreement for you and be sure you're not agreeing to terms you may not be comfortable with later on. Helping you understand your rights and negotiate fair returns to protect your legacy, oftentimes your family's legacy, are priorities to our attorneys.</p>
-            <p data-content="oil-gas-energy-text-2">Our attorneys experienced in oil and gas related contracts can help you negotiate, navigate, and realize the full potential of your holdings preserving those interests for your future or attaining the best terms for you and your individual needs.</p>
+          <div class="lg:col-span-2 space-y-5 text-base md:text-lg leading-relaxed text-text-dark font-light">
+            <p data-content="oil-gas-energy-p1">Oil and gas and/or mineral royalties are often an important piece to your legacy and we want to help you recognize and utilize these assets to their full potential. Let us help you negotiate the best agreement for you and be sure you're not agreeing to terms you may not be comfortable with later on. Helping you understand your rights and negotiate fair returns to protect your legacy, oftentimes your family's legacy, are priorities to our attorneys.</p>
+            <p data-content="oil-gas-energy-p2">Our attorneys experienced in oil and gas related contracts can help you negotiate, navigate, and realize the full potential of your holdings preserving those interests for your future or attaining the best terms for you and your individual needs.</p>
           </div>
         </div>
-        <hr class="border-border">
+
+        <hr class="border-gray-300">
 
         <!-- Real Estate and Land Use -->
-        <div id="real-estate" class="grid lg:grid-cols-3 gap-10 lg:gap-16 py-12">
+        <div id="real-estate" class="grid lg:grid-cols-3 gap-8 lg:gap-16 py-12">
           <div class="lg:col-span-1">
-            <h2 data-content="real-estate-title" class="font-heading text-3xl md:text-4xl font-medium">Real Estate and Land Use</h2>
+            <h2 data-content="real-estate-title" class="font-heading text-3xl md:text-4xl font-medium text-text-dark">Real Estate and Land Use</h2>
           </div>
-          <div class="lg:col-span-2 space-y-5 text-base md:text-lg leading-relaxed text-dark">
-            <p data-content="real-estate-text-1">Whether your real estate transaction is simple or complex, the best structure for your specific transaction is varied. Our attorneys will listen to understand your goals for the transaction, explain any legal implications of the transaction, negotiate the terms most beneficial to you, anticipate and navigate potential setbacks, and see your transaction through closing. We want to be sure your investment works the way you want it to and help you protect it for years to come.</p>
+          <div class="lg:col-span-2 space-y-5 text-base md:text-lg leading-relaxed text-text-dark font-light">
+            <p data-content="real-estate-p1">Whether your real estate transaction is simple or complex, the best structure for your specific transaction is varied. Our attorneys will listen to understand your goals for the transaction, explain any legal implications of the transaction, negotiate the terms most beneficial to you, anticipate and navigate potential setbacks, and see your transaction through closing. We want to be sure your investment works the way you want it to and help you protect it for years to come.</p>
           </div>
         </div>
-        <hr class="border-border">
+
+        <hr class="border-gray-300">
 
         <!-- Ranching and Agriculture -->
-        <div id="ranching-agriculture" class="grid lg:grid-cols-3 gap-10 lg:gap-16 py-12">
+        <div id="ranching-agriculture" class="grid lg:grid-cols-3 gap-8 lg:gap-16 py-12">
           <div class="lg:col-span-1">
-            <h2 data-content="ranching-agriculture-title" class="font-heading text-3xl md:text-4xl font-medium">Ranching and Agriculture</h2>
+            <h2 data-content="ranching-agriculture-title" class="font-heading text-3xl md:text-4xl font-medium text-text-dark">Ranching and Agriculture</h2>
           </div>
-          <div class="lg:col-span-2 space-y-5 text-base md:text-lg leading-relaxed text-dark">
-            <p data-content="ranching-agriculture-text-1">Ranching and agriculture issues arise for a variety of reasons and our attorneys are prepared to handle those challenges with an in-depth understanding of the history and culture of the ranching and agricultural communities of Wyoming. Our attorneys are informed and ready to assist you from developing your ranching operation to ensuring your hard work can become your legacy by navigating the evolving nature of your agricultural and ranching needs.</p>
+          <div class="lg:col-span-2 space-y-5 text-base md:text-lg leading-relaxed text-text-dark font-light">
+            <p data-content="ranching-agriculture-p1">Ranching and agriculture issues arise for a variety of reasons and our attorneys are prepared to handle those challenges with an in-depth understanding of the history and culture of the ranching and agricultural communities of Wyoming. Our attorneys are informed and ready to assist you from developing your ranching operation to ensuring your hard work can become your legacy by navigating the evolving nature of your agricultural and ranching needs.</p>
           </div>
         </div>
-        <hr class="border-border">
+
+        <hr class="border-gray-300">
 
         <!-- Estate Planning -->
-        <div id="estate-planning" class="grid lg:grid-cols-3 gap-10 lg:gap-16 py-12">
+        <div id="estate-planning" class="grid lg:grid-cols-3 gap-8 lg:gap-16 py-12">
           <div class="lg:col-span-1">
-            <h2 data-content="estate-planning-title" class="font-heading text-3xl md:text-4xl font-medium">Estate Planning</h2>
+            <h2 data-content="estate-planning-title" class="font-heading text-3xl md:text-4xl font-medium text-text-dark">Estate Planning</h2>
           </div>
-          <div class="lg:col-span-2 space-y-5 text-base md:text-lg leading-relaxed text-dark">
-            <p data-content="estate-planning-text-1">Developing the best estate plan structure for your individual needs is paramount to your ultimate goal when considering an estate plan – making things easier for your loved ones when you pass and avoiding unnecessary and sometimes expensive probate court. We at HHM do not believe in one-size-fits-all estate plans and collaborate with you to customize a plan that fits you and your personal circumstances. There are many factors to consider when creating an estate plan and our attorneys take pride in being thorough and efficient so you can be confident your estate plan will ease the burden of your loss experienced by your loved ones. In most instances we offer flat fee estate planning services so you know exactly how much you will pay. We do not charge you until your plan is completed the way you want it.</p>
-            <p data-content="estate-planning-text-2">Think you've found what you need online with a form on the internet? Does it come with personalized advice and counsel about its effects and validity? Does it fit your needs? An estate plan is a carefully crafted package designed to meet your unique circumstances- what's most important to you? You and your loved ones deserve more than a "one size fits all form" because you, your assets, your family structure, and your priorities are not "one size fits all." What you work hard for should be honored and preserved. HHM's attorneys guide you through the process to tailor an estate plan for you, ensuring your plan is not unnecessarily cumbersome potentially causing complication for your family. We work with you to create a plan that suits your unique needs and simplifies things for your family.</p>
+          <div class="lg:col-span-2 space-y-5 text-base md:text-lg leading-relaxed text-text-dark font-light">
+            <p data-content="estate-planning-p1">Developing the best estate plan structure for your individual needs is paramount to your ultimate goal when considering an estate plan – making things easier for your loved ones when you pass and avoiding unnecessary and sometimes expensive probate court. We at HHM do not believe in one-size-fits-all estate plans and collaborate with you to customize a plan that fits you and your personal circumstances. There are many factors to consider when creating an estate plan and our attorneys take pride in being thorough and efficient so you can be confident your estate plan will ease the burden of your loss experienced by your loved ones. In most instances we offer flat fee estate planning services so you know exactly how much you will pay. We do not charge you until your plan is completed the way you want it.</p>
+            <p data-content="estate-planning-p2">Think you've found what you need online with a form on the internet? Does it come with personalized advice and counsel about its effects and validity? Does it fit your needs? An estate plan is a carefully crafted package designed to meet your unique circumstances- what's most important to you? You and your loved ones deserve more than a "one size fits all form" because you, your assets, your family structure, and your priorities are not "one size fits all." What you work hard for should be honored and preserved. HHM's attorneys guide you through the process to tailor an estate plan for you, ensuring your plan is not unnecessarily cumbersome potentially causing complication for your family. We work with you to create a plan that suits your unique needs and simplifies things for your family.</p>
           </div>
         </div>
-        <hr class="border-border">
+
+        <hr class="border-gray-300">
 
         <!-- Probate -->
-        <div id="probate" class="grid lg:grid-cols-3 gap-10 lg:gap-16 py-12">
+        <div id="probate" class="grid lg:grid-cols-3 gap-8 lg:gap-16 py-12">
           <div class="lg:col-span-1">
-            <h2 data-content="probate-title" class="font-heading text-3xl md:text-4xl font-medium">Probate</h2>
+            <h2 data-content="probate-title" class="font-heading text-3xl md:text-4xl font-medium text-text-dark">Probate</h2>
           </div>
-          <div class="lg:col-span-2 space-y-5 text-base md:text-lg leading-relaxed text-dark">
-            <p data-content="probate-text-1">Wyoming probate administration can be complex and our attorneys are knowledgeable and experienced in all areas of Wyoming probate law, from large estates to small. The loss of a loved one is hard. Probate doesn't have to be the nightmare you've heard about. Allow one of our attorneys to advise and counsel you through the process to navigate and simplify the necessary steps for you while you grieve the loss of a loved one.</p>
-            <p data-content="probate-text-2">At HHM, you'll receive compassionate representation from experienced attorneys who ensure the probate proceedings move as smoothly and as quickly as possible. Every estate and its needs through probate differ – let us be the counsel you can rely on when you're faced with navigating a journey through probate.</p>
+          <div class="lg:col-span-2 space-y-5 text-base md:text-lg leading-relaxed text-text-dark font-light">
+            <p data-content="probate-p1">Wyoming probate administration can be complex and our attorneys are knowledgeable and experienced in all areas of Wyoming probate law, from large estates to small. The loss of a loved one is hard. Probate doesn't have to be the nightmare you've heard about. Allow one of our attorneys to advise and counsel you through the process to navigate and simplify the necessary steps for you while you grieve the loss of a loved one.</p>
+            <p data-content="probate-p2">At HHM, you'll receive compassionate representation from experienced attorneys who ensure the probate proceedings move as smoothly and as quickly as possible. Every estate and its needs through probate differ – let us be the counsel you can rely on when you're faced with navigating a journey through probate.</p>
           </div>
         </div>
-        <hr class="border-border">
+
+        <hr class="border-gray-300">
 
         <!-- Civil Litigation -->
-        <div id="civil-litigation" class="grid lg:grid-cols-3 gap-10 lg:gap-16 py-12">
+        <div id="civil-litigation" class="grid lg:grid-cols-3 gap-8 lg:gap-16 py-12">
           <div class="lg:col-span-1">
-            <h2 data-content="civil-litigation-title" class="font-heading text-3xl md:text-4xl font-medium">Civil Litigation</h2>
+            <h2 data-content="civil-litigation-title" class="font-heading text-3xl md:text-4xl font-medium text-text-dark">Civil Litigation</h2>
           </div>
-          <div class="lg:col-span-2 space-y-5 text-base md:text-lg leading-relaxed text-dark">
-            <p data-content="civil-litigation-text-1">Whether you are an existing client or have a new dispute, HHM is precisely the team you want on your side when litigation arises. A variety of situations can lead to civil litigation, including disputes between parties when dealing with probate matters, the management of real estate or other property, business relationships, and many others. Although litigation may seem like a daunting task, our attorneys are well-equipped to meet your litigation needs.</p>
+          <div class="lg:col-span-2 space-y-5 text-base md:text-lg leading-relaxed text-text-dark font-light">
+            <p data-content="civil-litigation-p1">Whether you are an existing client or have a new dispute, HHM is precisely the team you want on your side when litigation arises. A variety of situations can lead to civil litigation, including disputes between parties when dealing with probate matters, the management of real estate or other property, business relationships, and many others. Although litigation may seem like a daunting task, our attorneys are well-equipped to meet your litigation needs.</p>
           </div>
         </div>
 
@@ -202,40 +212,35 @@
   </main>
 
   <!-- Footer -->
-  <footer data-devtools-partial="footer" class="bg-dark text-white">
-    <div class="max-w-7xl mx-auto px-6 py-16">
-      <div class="flex flex-col md:flex-row justify-between items-start gap-12">
-        <div>
-          <a href="/">
-            <img src="https://devtools.prairiegiraffe.com/api/files/sites/proj_r99yrv9s/1773341263119/assets/mmntlnx552l1u7.webp" alt="Horning, Horning and McGrath, LLC" class="h-10 mb-6" loading="lazy">
-          </a>
-        </div>
-        <div class="grid sm:grid-cols-2 gap-12">
-          <div class="text-white/80 text-sm space-y-1">
-            <p>400 S. Douglas Hwy.</p>
-            <p>Gillette, WY 82716</p>
-            <div class="mt-4 space-y-1">
-              <p>Phone: <a href="tel:3076863736" class="hover:text-white">307-686-3736</a></p>
-              <p>Fax: 307-696-6013</p>
-            </div>
-          </div>
+  <footer data-devtools-partial="footer">
+    <div class="bg-dark-medium text-white">
+      <div class="max-w-7xl mx-auto px-6 lg:px-10 py-12">
+        <div class="flex flex-col gap-8">
           <div>
+            <a href="/" class="inline-block bg-white p-4 rounded">
+              <img src="https://devtools.prairiegiraffe.com/api/files/sites/proj_r99yrv9s/1773341263119/assets/mmntlnx552l1u7.webp" alt="Horning, Horning and McGrath, LLC" class="h-8" loading="lazy">
+            </a>
+          </div>
+          <div class="flex flex-col md:flex-row justify-between items-start gap-8">
+            <div class="flex flex-col sm:flex-row gap-8 sm:gap-16 text-white/80 text-sm">
+              <div class="space-y-1">
+                <p>400 S. Douglas Hwy.</p>
+                <p>Gillette, WY 82716</p>
+              </div>
+              <div class="space-y-1">
+                <p>Phone: <a href="tel:3076863736" class="hover:text-white">307-686-3736</a></p>
+                <p>Fax: 307-696-6013</p>
+              </div>
+            </div>
             <a href="/contact-us.html" class="inline-block border border-white text-white px-6 py-2 rounded-full text-sm font-medium hover:bg-white hover:text-dark transition-colors">Contact Us</a>
           </div>
         </div>
       </div>
     </div>
-    <div class="border-t border-white/10">
-      <div class="max-w-7xl mx-auto px-6 py-6">
-        <div class="flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-white/60">
-          <p>Copyright 2026 &copy; Horning, Horning and McGrath, LLC</p>
-          <nav class="flex gap-6" aria-label="Legal">
-            <a href="#" class="hover:text-white">Privacy Policy</a>
-            <a href="#" class="hover:text-white">Disclaimer</a>
-            <a href="#" class="hover:text-white">Terms of Use</a>
-          </nav>
-        </div>
-        <p class="text-xs text-white/40 mt-4">DISCLAIMER: The Wyoming State Bar does not certify any lawyer as a specialist or expert. Anyone considering a lawyer should independently investigate the lawyer's credentials and ability, and not rely upon advertisements or self-proclaimed expertise.</p>
+    <div class="bg-dark text-white">
+      <div class="max-w-7xl mx-auto px-6 lg:px-10 py-6">
+        <p class="text-sm text-white/60 mb-4">Copyright 2026 &copy; Horning, Horning and McGrath, LLC</p>
+        <p class="text-xs text-white/40">DISCLAIMER: The Wyoming State Bar does not certify any lawyer as a specialist or expert. Anyone considering a lawyer should independently investigate the lawyer's credentials and ability, and not rely upon advertisements or self-proclaimed expertise.</p>
       </div>
     </div>
   </footer>
